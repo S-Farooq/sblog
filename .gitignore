@@ -4,3 +4,5 @@ rclone.conf
 .cache
 .gatsby-context.js
 *.log
+.DS_Store
+src/.DS_Store
