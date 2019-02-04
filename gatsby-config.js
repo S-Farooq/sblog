@@ -4,7 +4,7 @@ module.exports = {
     author: 'Shaham Farooq',
     title: 'Blog.Shaham',
     siteUrl: 'https://blog.shaham.me',
-    description: "Shaham's Blog",
+    description: "Shaham Farooq works as a Data Scientist in Toronto. He writes on what he's reading.",
   },
   plugins: [
     'gatsby-plugin-catch-links',
