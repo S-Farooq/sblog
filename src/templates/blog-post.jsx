@@ -119,16 +119,16 @@ const BlogPost = ({ data, pageContext }) => {
             <TagsList tags={post.frontmatter.tags} />
           </Header>
           <PostWrap dangerouslySetInnerHTML={{ __html: post.html }} />
-          <Footer>
+          {/*<Footer>
             {isProduction && (
               <ReactDisqusComments
-                shortname="kenpowers"
+                shortname="shahamfarooq"
                 identifier={post.frontmatter.path}
                 title={post.frontmatter.title}
                 url={fullUrl}
               />
             )}
-          </Footer>
+          </Footer>*/}
         </article>
         
       </Main>

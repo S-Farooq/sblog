@@ -43,7 +43,7 @@ module.exports = {
     }, {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://knpw.rs',
+        siteUrl: 'https://blog.shaham.me',
       },
     }, {
       resolve: 'gatsby-plugin-feed',
