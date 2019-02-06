@@ -7,7 +7,8 @@ layout: post
 foldnum: 2
 ---
 
-Researching GDPR and its impact, I came across some elements of GDPR that piqued my interest for what they implied about our culture and paradigms around data and technology:
+Researching GDPR and its impact, I came across some elements of GDPR that piqued my interest for what they implied about our culture and paradigms around data privacy:
+
 > ## A. What is ‘free’ consent?
 > ## B. Data as an ‘object’ vs. data as an ‘experience of you’
 > ## C. To be forgotten by the network beyond the individual
