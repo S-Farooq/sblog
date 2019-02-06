@@ -5,6 +5,7 @@ path: /for-emma
 tags: music, indie, art, analysis
 layout: post
 foldnum: 2
+exclude: 1
 ---
 
 ![](./cover.jpeg)

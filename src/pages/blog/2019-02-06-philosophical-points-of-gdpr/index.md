@@ -5,6 +5,7 @@ path: /philosophy-from-gdpr
 tags: data, philosophy, tech
 layout: post
 foldnum: 2
+exclude: 1
 ---
 
 Researching GDPR and its impact, I came across some elements of GDPR that piqued my interest for what they implied about our culture and paradigms around data privacy:

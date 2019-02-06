@@ -5,11 +5,12 @@ path: /the-national-dict
 tags: music, thenational
 layout: post
 foldnum: 6
+exclude: 1
 ---
 
 ![](./cover.jpeg)
 
-An on-going list of interpretative definitions of *The National [band] s*ymbols
+An on-going list of interpretative definitions of *The National [band]* symbols
 
 ### Ghost
 

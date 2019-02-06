@@ -29,6 +29,7 @@ export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {exclude: {ne: 1}}}
     ) {
       edges {
         node {
@@ -40,6 +41,7 @@ export const query = graphql`
             path
             tags
             foldnum
+            exclude
           }
         }
       }

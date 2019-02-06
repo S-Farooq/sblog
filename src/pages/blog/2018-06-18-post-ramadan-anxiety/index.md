@@ -5,6 +5,7 @@ path: /post-ramadan-anxiety
 tags: religion, philosophy
 layout: post
 foldnum: 1
+exclude: 1
 ---
 
 As Ramadan enters our lives, disturbing that rote of a procedure that we call ‘living’, it demands fresh sacrifices. Though the ‘not eating’ part opens up pockets of time here and there, the culture of Ramadan and its ‘extra-curricular’ — but highly encouraged — activities take up almost the entire evening and then some. Night prayers (Taraweeh), even if performed minimally (8 ‘rakats’), take you close to or past your normal ‘bed time’ (if you’re a working person). Since the hours of sunlight are usually consumed by work/school/etc. anyways, that practically leaves you with about 3–4 weekends to take on bigger tasks — if you can deny yourself rest as well as the blessed opportunity to do more religious rituals. Needless to say, Ramadan is demanding, but this is not discouraging or overly strenuous on Muslims who are socially and culturally well-accustomed to such a sacrifice on an annual basis. Fast forward a month later and we celebrate all these sacrifices on Eid, enjoying the company of friends and family and food during daylight hours. Fast forward a little bit more and the plot twists: some of us are hit with an existential anxiety, a withdrawal of sorts, a nagging, gnawing feeling of Freedom and all the wonderful Anxiety that comes with it.

@@ -5,6 +5,7 @@ path: /inadequacy-of-language
 tags: philosophy, communication, essay
 layout: post
 foldnum: 3
+exclude: 1
 ---
 
 Maybe one of the most tragic love stories is between language and the need for meaningful communication. Neither is completely capable of each other. Neither asks for help. Sometimes, in the middle of conversation, attempting to transfer our inner workings on to another, we are hit with the despairing realization, "It’s not working, I’m not getting through, I can’t". Suddenly, something gets caught in the gears of words and tones, and the heavy feeling of something noncommunicable takes over our limbs.

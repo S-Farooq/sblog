@@ -76,6 +76,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {exclude: {ne: 1}}}
       limit: 1000
     ) {
       edges {
@@ -89,6 +90,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
             tags
             title
             foldnum
+            exclude
           }
         }
       }
