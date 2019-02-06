@@ -8,11 +8,10 @@ import { FaTwitterSquare, FaMedium, FaLinkedin } from 'react-icons/fa';
 
 
 const AboutFooter = styled.footer(({ theme }) => ({
-  backgroundColor: 'rgba(39, 38, 34)',
-  backgroundColor: 'rgba(39, 38, 34, .05)',
+  backgroundColor: theme.aboutfooterBgColor,
   borderTop: '1px black solid',
   marginTop: '15px',
-  color: theme.textColor,
+  color: theme.headerTextColor,
   height: '${theme.headerHeight / 2}',
   textAlign: 'center',
   opacity: 1.0,

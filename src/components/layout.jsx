@@ -10,6 +10,19 @@ import Header from './header';
 import Footer from './footer';
 import AboutFooter from './aboutfooter';
 
+// const minWidthPx = 550;
+// const maxWidthPx = 750;
+// const spacingPx = 20;
+// const centerPadding = `calc((100vw - ${maxWidthPx - (2 * spacingPx)}px) / 2)`;
+// const smallMedia = `@media(max-width: ${minWidthPx}px)`;
+// const largeMedia = `@media(min-width: ${maxWidthPx}px)`;
+// const textColor = '#333';
+// const headerTextColor = '#FFFFFF';
+// const headerBgColor = '#272722';
+// const accentColor = '#ab4642';
+// const datetimeColor = '#72726F';
+
+
 const minWidthPx = 550;
 const maxWidthPx = 750;
 const spacingPx = 20;
@@ -17,10 +30,13 @@ const centerPadding = `calc((100vw - ${maxWidthPx - (2 * spacingPx)}px) / 2)`;
 const smallMedia = `@media(max-width: ${minWidthPx}px)`;
 const largeMedia = `@media(min-width: ${maxWidthPx}px)`;
 const textColor = '#333';
-const headerTextColor = '#FFFFFF';
-const headerBgColor = '#272722';
-const accentColor = '#ab4642';
-const datetimeColor = '#72726F';
+const headerTextColor = '#EEEDD9';
+const headerBgColor = '#0B7372';
+const footerBgColor = '#0B7372';
+const aboutfooterBgColor = '#09868A';
+const accentColor = '#ffa70f';
+const datetimeColor = '#333';
+const hoverSpaceColor = "#EEEDD9";
 
 const theme = {
   spacingPx,
@@ -41,7 +57,10 @@ const theme = {
   },
   headerTextColor,
   headerBgColor,
+  aboutfooterBgColor,
+  footerBgColor,
   datetimeColor,
+  hoverSpaceColor
 };
 
 const Layout = ({ children }) => (
@@ -54,10 +73,10 @@ const Layout = ({ children }) => (
           margin: 0,
           padding: 0,
           fontFamily: 'Majoram',
-          fontSize:'1.1em',
+          fontSize:'1.1rem',
         },
         'p':{
-          fontSize:'1.2em',
+          fontSize:'1.2rem',
         },
         '::-moz-selection': {
           background: accentColor,

@@ -8,9 +8,9 @@ foldnum: 2
 ---
 
 Researching GDPR and its impact, I came across some elements of GDPR that piqued my interest for what they implied about our culture and paradigms around data and technology:
-> # A. What is ‘free’ consent?
-> # B. Data as an ‘object’ vs. data as an ‘experience of you’
-> # C. To be forgotten by the network beyond the individual
+> ## A. What is ‘free’ consent?
+> ## B. Data as an ‘object’ vs. data as an ‘experience of you’
+> ## C. To be forgotten by the network beyond the individual
 
 ## Introduction
 
@@ -48,7 +48,7 @@ GDPR is perhaps strictest as how it defines ‘consent’ — in fact, some feel
 
 Purpose Limitation is a principle of GDPR that basically says data must ***only*** be processed for the purpose that it was collected. So, if a company requested a picture of your face for facial recognition technology (ex. on your iPhone), they can’t use it to train models to understand your age. What’s the philosophy here? I think this hints at a certain mismatch between what data really ‘means’ to data controllers versus how data subjects (we) see it.
 
-We’ve often seen data as an ‘object’ that you allow another entity to ‘borrow’ or even claim ‘ownership’ over and then we question the ‘morality’ of data controller (i.e. a company) if the ‘object’ has been used appropriately or not. But with **Purpose Limitation **in GDPR, you don’t consent over your data ‘as an object’ — rather, you are consenting to only a specific way a company is allowed to ‘experience’ you through your data. This is maybe a rough connection, but GDPR has a more phenomenological view of data and **Purpose Limitation** acts as a contractual constraint on that very phenomenological approach.
+We’ve often seen data as an ‘object’ that you allow another entity to ‘borrow’ or even claim ‘ownership’ over and then we question the ‘morality’ of data controller (i.e. a company) if the ‘object’ has been used appropriately or not. But with **Purpose Limitation** in GDPR, you don’t consent over your data ‘as an object’ — rather, you are consenting to only a specific way a company is allowed to ‘experience’ you through your data. This is maybe a rough connection, but GDPR has a more phenomenological view of data and **Purpose Limitation** acts as a contractual constraint on that very phenomenological approach.
 
 As a simple description, in a phenomenological exercise, you often begin with a set of *experiences* from a subject that are examined and re-examined for their biases and suppositions to almost ‘see the world through the subject’s eyes’. This is not so far from what automated algorithms attempt to do from your data — algorithms attempt to model you, so the data controller can see as you see and make decisions based on that knowledge. **Purpose Limitation** limits the scope of the company’s phenomenological exercise, and so your contractual consent only allows for a specific interpretation of you within a specified dimension. This helps data subjects (us) to better value our data and preform a reversal of the phenomenological exercise from the company — under the GDPR worldview, we can see our own data as the data controller sees it.
 > **Side Note:** a basic understanding of privacy in the digital age is that the true infringement to your identity and privacy is not exposure of the exact information you provide but the inferences made on that information for secondary-purposes — ex. a “security” camera taking video footage for real time advertisement targeting as you walk into a store. Furthermore, cross referencing between identifiers (driver’s licence, student ID, passport, etc.) can help build an extremely detailed profile (beyond anything a single piece of identification can provide). With **Purpose Limitation**, we can force the scope of data controllers to only look at the identifier(s) specifically appropriate for their use case and nothing more.
@@ -70,6 +70,7 @@ Sources for this post and other resources to read if you’d like to know more:
 * [Industry Research on public perception of privacy after Cambridge Analytica Scandal](https://www.janrain.com/resources/industry-research/consumer-attitudes-toward-data-privacy-survey-2018)
 
 * [The first complaints against Facebook and Google under GDPR](https://www.theguardian.com/technology/2018/may/25/facebook-google-gdpr-complaints-eu-consumer-rights)
+
 > Another interesting analysis I found while researching GDPR impact are speculations on the economic impact of GDPR. [This paper theorizes that under GDPR, data itself will become a ‘financial option’ of sorts with associated risk as it will not be guaranteed to provide ‘positive’ value for the specific operation it is collected for — and since it can’t be contractually used for anything else due to Purpose Limitation principle, it will basically be of zero/negative value to the company.](https://www.academia.edu/37376314/Some_Economic_Consequences_of_the_GDPR) This ‘option-izing’ of data may then give rise to complex financial data markets including ‘data insurance’ companies that mitigate the risk for a company if the data serves no operation value.
 
 [View Post on Medium][MediumPost]

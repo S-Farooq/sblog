@@ -6,7 +6,7 @@ import { FaTwitterSquare, FaMedium, FaLinkedin, FaGithubSquare } from 'react-ico
 
 
 const Footer = styled.footer(({ theme }) => ({
-  backgroundColor: "#272722",
+  backgroundColor: theme.footerBgColor,
   color: theme.headerTextColor,
   height: '${theme.headerHeight / 2}',
   textAlign: 'center',

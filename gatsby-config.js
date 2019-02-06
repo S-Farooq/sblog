@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     author: 'Shaham Farooq',
-    title: 'Blog.Shaham',
+    title: "Shaham's Blog",
     siteUrl: 'https://blog.shaham.me',
     description: "Shaham Farooq works as a Data Scientist in Toronto. He writes on what he's reading.",
   },

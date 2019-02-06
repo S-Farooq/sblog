@@ -21,7 +21,7 @@ const A = styled(Link)(({ theme }) => ({
 
 const CommaSeparatedTags = ({ tags }) => (
   <Small>
-    Topics:
+    Filed under:
     {' '}
     {tags.split(', ').map((tag, index, array) => (
       <span key={tag}>

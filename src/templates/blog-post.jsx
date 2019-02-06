@@ -74,6 +74,10 @@ const PostWrap = styled.section(({ theme }) => ({
   '>ul,>ol': {
     marginLeft: `${theme.spacingPx * 4}px`,
     width: `calc(100% - ${theme.spacingPx * 4}px)`,
+    [theme.smallMedia]: {
+      marginLeft: `${theme.spacingPx * 0}px`,
+      width: `calc(100% - ${theme.spacingPx * 2}px)`,
+    }
   },
 }));
 
