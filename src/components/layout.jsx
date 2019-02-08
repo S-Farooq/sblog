@@ -72,11 +72,13 @@ const Layout = ({ children }) => (
           height: '100vh',
           margin: 0,
           padding: 0,
-          fontFamily: 'Majoram',
+          fontFamily: 'Lato',
           fontSize:'1.1rem',
+          fontWeight:'400',
         },
         'p':{
           fontSize:'1.2rem',
+          lineHeight: '1.6rem',
         },
         '::-moz-selection': {
           background: accentColor,
@@ -92,20 +94,51 @@ const Layout = ({ children }) => (
           // marginBottom: 0,
         },
         a: {
-          textDecoration: 'underline',
-          fontWeight: 'bold',
+          textDecoration: 'none',
           color: accentColor,
           transition: 'color 100ms linear',
           ':hover': {
             color: textColor,
           },
         },
+        
         blockquote: {
+          fontFamily: 'Lato',
           background: '#F9F9F9',
-          backgroundColor: 'rgba(39, 38, 34)',
-          backgroundColor: 'rgba(39, 38, 34, .05)',
-          padding: `${spacingPx * 2}px`,
+          background: 'rgba(39, 38, 34)',
+          background: 'rgba(39, 38, 34, .05)',
+          background: '#f7f7f7',
+          padding: `${spacingPx * 1}px`,
           margin: 0,
+        },
+        'blockquote > p': {
+          paddingLeft: `${spacingPx * 1}px`,
+          paddingRight: `${spacingPx * 1}px`,
+
+          [theme.largeMedia]: {
+            paddingLeft: `${spacingPx * 2}px`,
+            paddingRight: `${spacingPx * 2}px`,
+          },
+          
+          fontSize:'1.2rem',
+          fontWeight:'300',
+        },
+        'blockquote:before, blockquote:after': {
+            color:'#EBB1B2',
+            content:'\f10d',
+            fontFamily:'Lato',
+            fontSize:'30px',
+            position:'absolute',
+            top:'5px',
+            left:'8px',
+            display:'block',
+        },
+        'blockquote:after': {
+            content:'\f10e',
+            bottom:0,
+            right:'8px',
+            top:'auto',
+            left:'auto',
         },
         '.content': {
         [theme.largeMedia]: {
