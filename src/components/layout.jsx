@@ -104,9 +104,9 @@ const Layout = ({ children }) => (
         
         blockquote: {
           fontFamily: 'Lato',
-          background: '#F9F9F9',
-          background: 'rgba(39, 38, 34)',
-          background: 'rgba(39, 38, 34, .05)',
+          // background: '#F9F9F9',
+          // background: 'rgba(39, 38, 34)',
+          // background: 'rgba(39, 38, 34, .05)',
           background: '#f7f7f7',
           padding: `${spacingPx * 1}px`,
           margin: 0,
@@ -122,23 +122,6 @@ const Layout = ({ children }) => (
           
           fontSize:'1.2rem',
           fontWeight:'300',
-        },
-        'blockquote:before, blockquote:after': {
-            color:'#EBB1B2',
-            content:'\f10d',
-            fontFamily:'Lato',
-            fontSize:'30px',
-            position:'absolute',
-            top:'5px',
-            left:'8px',
-            display:'block',
-        },
-        'blockquote:after': {
-            content:'\f10e',
-            bottom:0,
-            right:'8px',
-            top:'auto',
-            left:'auto',
         },
         '.content': {
         [theme.largeMedia]: {
