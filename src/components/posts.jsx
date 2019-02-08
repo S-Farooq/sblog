@@ -42,14 +42,15 @@ const Article = styled.article(({ theme }) => ({
   WebkitBackgroundClip: 'padding-box', 
   backgroundClip: 'padding-box',
   transition: 'color 100ms linear',
-  ':hover': {
-    backgroundColor: 'rgba(39, 38, 34)',
-    backgroundColor: 'rgba(39, 38, 34, .05)',
-  },
+  // ':hover': {
+  //   backgroundColor: 'rgba(39, 38, 34)',
+  //   backgroundColor: 'rgba(39, 38, 34, .05)',
+  // },
 }));
 
 const H4 = styled.h4({
   margin: 0,
+  fontWeight: '600',
 });
 
 const Time = styled.time(({ theme }) => ({
@@ -68,7 +69,7 @@ const Link = styled(GatsbyLink)(({ theme }) => ({
 }));
 
 const ReadLink = styled(GatsbyLink)(({ theme }) => ({
-  textDecoration: 'underline',
+  textDecoration: 'none',
   padding: '15px',
   fontSize:'1.2rem',
   color: theme.accentColor,
@@ -78,15 +79,20 @@ const ReadLink = styled(GatsbyLink)(({ theme }) => ({
     color: theme.textColor,
   },
   borderBottom: '10px',
+  [theme.smallMedia]: {
+    padding: '0px',
+  },
 }));
 
 const TextPreview = styled.div(({ theme }) => ({
   fontSize:'1.1rem',
+  padding: '15px',
   [theme.smallMedia]: {
     fontSize:'0.9rem',
+    padding: '0px',
   },
   opacity:0.9,
-  padding: '15px',
+  
   color: theme.textColor,
   
 
