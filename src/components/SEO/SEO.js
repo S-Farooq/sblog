@@ -12,6 +12,7 @@ const SEO = ({
   image = null,
   pathname = null,
   article = false,
+  twitterCardType = null,
 }) => (
   <StaticQuery
     query={graphql`
@@ -62,6 +63,7 @@ const SEO = ({
             appID={facebookAppID}
           />
           <Twitter
+            cardType={twitterCardType}
             username={twitterUsername}
             title={seo.title}
             description={seo.description}
