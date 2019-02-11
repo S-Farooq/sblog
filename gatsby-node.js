@@ -91,6 +91,17 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
             title
             foldnum
             exclude
+            featuredImage {
+              childImageSharp{
+                  fluid(maxWidth: 750) {
+                    src
+                      srcSet
+                      aspectRatio
+                      sizes
+                      base64
+                  }
+              }
+            }
           }
         }
       }
