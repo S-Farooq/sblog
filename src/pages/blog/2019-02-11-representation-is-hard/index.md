@@ -6,7 +6,7 @@ tags: creativity, art, work
 layout: post
 foldnum: 3
 featuredImage: './coverscraph.jpg'
-description: "A test desc."
+description: "Often people comment on art as if representing against the status-quo is simply a matter of choice - forgetting the skill required to not break the spell of an art work as it represents something outside the norm."
 ---
 
 Recently [a statment by the director/screenwriter of Godless](https://www.indiewire.com/2018/05/netflix-godless-western-scott-frank-1201966612/) (a ‘feminist’ Western) caught my eye as he was explaining his placement of women in the plot:

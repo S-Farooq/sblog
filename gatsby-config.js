@@ -63,7 +63,6 @@ module.exports = {
               siteUrl
               image
               site_url: siteUrl
-              image_url: { siteUrl + image}
             }
           }
         }`,
