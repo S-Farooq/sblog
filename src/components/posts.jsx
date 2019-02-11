@@ -10,6 +10,7 @@ import getPreFoldContent from '../util/getPreFoldContent';
 import removeTags from '../util/removeTags';
 import getPreviewHtml from '../util/getPreviewHtml';
 import prune from 'underscore.string/prune';
+import Img from "gatsby-image";
 
 const groupPosts = posts => groupBy(posts, p => 
   (
@@ -46,6 +47,16 @@ const Article = styled.article(({ theme }) => ({
   //   backgroundColor: 'rgba(39, 38, 34)',
   //   backgroundColor: 'rgba(39, 38, 34, .05)',
   // },
+}));
+
+const CoverImage = styled.div(({ theme }) => ({
+  margin: '15px',
+  alignItems: 'center',
+  [theme.smallMedia]: {
+    margin: '0px',
+    marginTop: '10px',
+  },
+
 }));
 
 const H4 = styled.h4({
@@ -121,6 +132,9 @@ const Posts = ({ posts }) => {
                   {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
                 </Time>
               </Header>
+              {post.frontmatter.featuredImage ? <CoverImage>
+              <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "3px solid black"}} />
+              </CoverImage>: '' }
               <TextPreview
               dangerouslySetInnerHTML={{ __html: getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum) }} />
               <ReadLink to={post.frontmatter.path}>

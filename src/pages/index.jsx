@@ -42,6 +42,16 @@ export const query = graphql`
             tags
             foldnum
             exclude
+            featuredImage {
+                childImageSharp{
+                    sizes(maxWidth: 750) {
+                        ...GatsbyImageSharpSizes
+                    }
+                    fluid(maxWidth: 750) {
+                      ...GatsbyImageSharpFluid
+                    }
+                }
+            }
           }
         }
       }

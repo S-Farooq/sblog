@@ -7,7 +7,7 @@ layout: post
 foldnum: 3
 ---
 
-I often find myself thinking about 'what I think about' and the irregular periods of intense engagement versus a general indifference associated with any given topic. I've tried to mentally model this dynamics in various ways (sinusodial - maybe its just an up and down kind of thing?, diffusion - do I gradually bleed out from one idea to another?) but have never quite been able to put a finger on it. There are too many irregularities, too much uneven intervals between one engagement versus another.
+I often find myself thinking about 'what I think about' and the irregular periods of intense engagement versus a general indifference associated with any given topic. I've tried to mentally model this dynamics in various ways (sinusodial - maybe its just an up and down kind of thing?, diffusion - do I gradually bleed out from one idea to another?) but have never quite been able to put a finger on it. There are too many irregularities, too uneven of intervals between one engagement versus another.
 
 Then I came across [a piece by Paul Griffith that presented another analogy: falling in love](https://www.firstthings.com/article/2018/05/letter-to-an-aspiring-intellectual).
 
@@ -38,4 +38,4 @@ I 'love so-and-so author/thinker' takes on a more specific meaning under this mo
 **Montaigne** is someone who I often return to for his attitude towards learning:
 > "Off I go, rummaging about in books for sayings which **please** me." <br />&nbsp;&nbsp; &mdash; Montaigne
 
-Maybe in today's polarized, echo chamber-ish times, we all should [adopt a little montaigne in our life](https://www.amazon.com/How-Live-Montaigne-Question-Attempts/dp/1590514831) and go rummage about to find something to think about.
+Maybe in today's polarized, echo chamber-ish times, we all should [adopt a little montaigne in our life](https://www.amazon.com/How-Live-Montaigne-Question-Attempts/dp/1590514831) and go rummaging about to find something to think about.

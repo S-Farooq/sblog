@@ -67,7 +67,7 @@ const SiteFooter = () => (
         <P>
         <small>
           Shaham Farooq works as a Data Scientist in Toronto, Canada. 
-          He writes on what he's reading.
+          He writes on thinking, reading, and creativity for the amateur.
           </small>
           
         </P>
