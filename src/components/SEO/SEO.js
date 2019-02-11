@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery } from 'gatsby';
 import Twitter from './Twitter';
 import Facebook from './Facebook';
+import ProfilePic from '../../images/profilepic.jpeg'; 
 
 const SEO = ({
   title = null,
@@ -42,7 +43,7 @@ const SEO = ({
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
+        image: `${siteUrl}${image || ProfilePic}`,
         url: `${siteUrl}${pathname || '/'}`,
       };
 
