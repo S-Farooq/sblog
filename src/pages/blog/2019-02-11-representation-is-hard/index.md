@@ -6,6 +6,7 @@ tags: creativity, art, work
 layout: post
 foldnum: 3
 featuredImage: './coverscraph.jpg'
+description: "A test desc."
 ---
 
 Recently [a statment by the director/screenwriter of Godless](https://www.indiewire.com/2018/05/netflix-godless-western-scott-frank-1201966612/) (a ‘feminist’ Western) caught my eye as he was explaining his placement of women in the plot:

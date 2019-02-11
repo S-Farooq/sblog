@@ -5,9 +5,11 @@ import Layout from '../components/layout';
 import CenterWrap from '../components/center-wrap';
 import Posts from '../components/posts';
 import postShape from '../shapes/post';
+import SEO from '../components/SEO/SEO';
 
 const Index = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
   <Layout>
+  <SEO />
     <CenterWrap>
       <h2>Posts</h2>
       <Posts posts={posts.map(post => post.node)} />
