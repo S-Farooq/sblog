@@ -55,6 +55,7 @@ const CoverImage = styled.div(({ theme }) => ({
   [theme.smallMedia]: {
     margin: '0px',
     marginTop: '10px',
+    marginBottom: '10px',
   },
 
 }));
@@ -96,17 +97,23 @@ const ReadLink = styled(GatsbyLink)(({ theme }) => ({
 }));
 
 const TextPreview = styled.div(({ theme }) => ({
-  fontSize:'1.1rem',
   padding: '15px',
   [theme.smallMedia]: {
-    fontSize:'0.9rem',
     padding: '0px',
   },
   opacity:0.9,
-  
   color: theme.textColor,
-  
-
+  '>p': {
+    fontSize:'1.1rem',
+    lineHeight: '1.4rem',
+  },
+  'blockquote > p': {
+    margin:0,
+    paddingLeft:0,
+    paddingRight:0,
+    fontSize:'1.1rem',
+    lineHeight: '1.4rem',
+  },
 }));
 
 
@@ -133,7 +140,9 @@ const Posts = ({ posts }) => {
                 </Time>
               </Header>
               {post.frontmatter.featuredImage ? <CoverImage>
-              <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "3px solid black"}} />
+              <GatsbyLink to={post.frontmatter.path}>
+                  <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
+              </GatsbyLink>
               </CoverImage>: '' }
               <TextPreview
               dangerouslySetInnerHTML={{ __html: getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum) }} />
