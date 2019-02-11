@@ -129,7 +129,7 @@ const Layout = ({ children }) => (
           },
         },
         '.gatsby-resp-image-image': {
-          border: "3px solid black",
+          border: "0.1em solid #333",
         }
 
           

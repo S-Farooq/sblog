@@ -6,6 +6,7 @@ tags: thinking, philosophy, ideas
 layout: post
 foldnum: 1
 featuredImage: './coverscraph.jpg'
+description: "While habitual application in craft builds skills, in regards to ideas - habitual application degrades?"
 ---
 
 > **But ideas may lose their intellectual quality as they are habitually used.** When a child was first learning to recognize, in some hesitating suspense, cats, dogs, houses, marbles, trees, shoes, and other objects, ideas—conscious and tentative meanings—intervened as methods of identification. Now, as a rule, the thing and the meaning are so completely fused that there is no judgment and no idea proper, but only automatic recognition. <br />&nbsp;&nbsp; &mdash; John Dewey

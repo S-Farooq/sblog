@@ -17,6 +17,7 @@ import getPreFoldContent from '../util/getPreFoldContent';
 import removeTags from '../util/removeTags';
 import getPreviewHtml from '../util/getPreviewHtml';
 import prune from 'underscore.string/prune';
+import { Link as GatsbyLink } from 'gatsby';
 
 import SEO from '../components/SEO/SEO';
 import Img from "gatsby-image";
@@ -39,9 +40,12 @@ const Header = styled.header(({ theme }) => ({
 }));
 
 const CoverImage = styled.div(({ theme }) => ({
-  ...theme.centerPadding,
-  alignItems: 'center',
-  margin:'1em',
+  margin:'0.2em',
+  [theme.largeMedia]: {
+    ...theme.centerPadding,
+    alignItems: 'center',
+    margin:'1em',
+  }
 
 }));
 
@@ -138,7 +142,7 @@ const BlogPost = ({ data, pageContext }) => {
             
           </Header>
           {post.frontmatter.featuredImage ? <CoverImage>
-            <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "3px solid black"}} />
+            <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
             </CoverImage>: '' }
 
           
