@@ -119,7 +119,8 @@ const BlogPost = ({ data, pageContext }) => {
       <Main>
         <SEO
           title={post.frontmatter.title}
-          image={post.frontmatter.featuredImage.childImageSharp.sizes.src}
+          image={post.frontmatter.featuredImage ?
+          post.frontmatter.featuredImage.childImageSharp.sizes.src: '' }
           description={removeTags(getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum))|| 'nothin’'}
           pathname={fullUrl}
           article
@@ -135,9 +136,11 @@ const BlogPost = ({ data, pageContext }) => {
             <TagsList tags={post.frontmatter.tags} />
             
           </Header>
-          <CoverImage>
+          {post.frontmatter.featuredImage ? <CoverImage>
             <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "3px solid black"}} />
-            </CoverImage>
+            </CoverImage>: '' }
+
+          
           <PostWrap dangerouslySetInnerHTML={{ __html: post.html }} />
           {/*<Footer>
             {isProduction && (
