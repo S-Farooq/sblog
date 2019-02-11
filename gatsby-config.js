@@ -61,6 +61,8 @@ module.exports = {
               title
               description
               siteUrl
+              image
+              site_url: siteUrl
             }
           }
         }`,

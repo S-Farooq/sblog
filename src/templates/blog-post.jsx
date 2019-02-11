@@ -121,10 +121,11 @@ const BlogPost = ({ data, pageContext }) => {
           title={post.frontmatter.title}
           image={post.frontmatter.featuredImage ?
           post.frontmatter.featuredImage.childImageSharp.sizes.src: '' }
-          description={removeTags(getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum))|| 'nothin’'}
+          description={post.frontmatter.description || removeTags(getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum > 2 ? 2: post.frontmatter.foldnum)) || 'nothin’'}
           pathname={fullUrl}
           article
         />
+        
         <article>
           <Header>
             <HeaderTitle>
@@ -183,7 +184,9 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         tags
+        foldnum
         title
+        description
         featuredImage {
                 childImageSharp{
                     sizes(maxWidth: 750) {
