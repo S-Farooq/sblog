@@ -1,16 +1,23 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
+    url: 'https://blog.shaham.me', // No trailing slash allowed!
+    image: "/images/profilepic.jpeg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@shahamfarooq",
     author: 'Shaham Farooq',
     title: "Shaham's Blog",
     siteUrl: 'https://blog.shaham.me',
-    description: "Shaham Farooq works as a Data Scientist in Toronto. He writes on what he's reading.",
+    description: "Writings on thinking, reading, and creativity for the amateur.",
+    owner: 'Shaham Farooq',
+    facebookAppID: '',
   },
   plugins: [
     'gatsby-plugin-catch-links',
     'gatsby-plugin-emotion',
     'gatsby-plugin-favicon',
     'gatsby-plugin-react-helmet',
+    `gatsby-transformer-sharp`,
+    'gatsby-image',
     'gatsby-plugin-sharp', {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -70,6 +77,7 @@ module.exports = {
             allMarkdownRemark(
               limit: 1000,
               sort: { order: DESC, fields: [frontmatter___date] }
+              filter: {frontmatter: {exclude: {ne: 1}}}
             ) {
               edges {
                 node {

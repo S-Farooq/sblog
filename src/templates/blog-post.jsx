@@ -13,6 +13,13 @@ import PostNav from '../components/post-nav';
 import CodeStyle from '../emotion/code';
 import pageContextShape from '../shapes/page-context';
 import postShape from '../shapes/post';
+import getPreFoldContent from '../util/getPreFoldContent';
+import removeTags from '../util/removeTags';
+import getPreviewHtml from '../util/getPreviewHtml';
+import prune from 'underscore.string/prune';
+
+import SEO from '../components/SEO/SEO';
+import Img from "gatsby-image";
 
 const Main = styled.main(({ theme }) => ({
   color: theme.textColor,
@@ -29,6 +36,13 @@ const Header = styled.header(({ theme }) => ({
     flexDirection: 'column',
     flexWrap: 'nowrap',
   },
+}));
+
+const CoverImage = styled.div(({ theme }) => ({
+  ...theme.centerPadding,
+  alignItems: 'center',
+  margin:'1em',
+
 }));
 
 const HeaderTitle = styled.h1(({ theme }) => ({
@@ -103,15 +117,13 @@ const BlogPost = ({ data, pageContext }) => {
     <Layout>
       <CodeStyle />
       <Main>
-        <Helmet>
-          <title>
-            {post.frontmatter.title}
-            {' '}
-            &middot;
-            {' '}
-            {title}
-          </title>
-        </Helmet>
+        <SEO
+          title={post.frontmatter.title}
+          image={post.frontmatter.featuredImage.childImageSharp.sizes.src}
+          description={removeTags(getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum))|| 'nothin’'}
+          pathname={fullUrl}
+          article
+        />
         <article>
           <Header>
             <HeaderTitle>
@@ -121,7 +133,11 @@ const BlogPost = ({ data, pageContext }) => {
               {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
             </HeaderDate>
             <TagsList tags={post.frontmatter.tags} />
+            
           </Header>
+          <CoverImage>
+            <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "3px solid black"}} />
+            </CoverImage>
           <PostWrap dangerouslySetInnerHTML={{ __html: post.html }} />
           {/*<Footer>
             {isProduction && (
@@ -165,6 +181,16 @@ export const query = graphql`
         path
         tags
         title
+        featuredImage {
+                childImageSharp{
+                    sizes(maxWidth: 750) {
+                        ...GatsbyImageSharpSizes
+                    }
+                    fluid(maxWidth: 750) {
+                      ...GatsbyImageSharpFluid
+                    }
+                }
+            }
       }
     }
   }
