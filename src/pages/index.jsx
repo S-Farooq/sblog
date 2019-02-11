@@ -9,7 +9,7 @@ import SEO from '../components/SEO/SEO';
 
 const Index = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
   <Layout>
-  <SEO />
+  <SEO twitterCardType='summary'/>
     <CenterWrap>
       <h2>Posts</h2>
       <Posts posts={posts.map(post => post.node)} />
