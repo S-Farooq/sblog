@@ -117,15 +117,17 @@ const BlogPost = ({ data, pageContext }) => {
 
   const isProduction = process.env.NODE_ENV === 'production';
   const fullUrl = `${siteUrl}${post.frontmatter.path}`;
-
+  const cardImage = post.frontmatter.cardImage ?
+        post.frontmatter.cardImage: post.frontmatter.featuredImage
+        
   return (
     <Layout>
       <CodeStyle />
       <Main>
         <SEO
           title={post.frontmatter.title}
-          image={post.frontmatter.featuredImage ?
-          post.frontmatter.featuredImage.childImageSharp.sizes.src: '' }
+          image={cardImage ?
+            cardImage.childImageSharp.sizes.src: '' }
           description={post.frontmatter.description || removeTags(getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum > 2 ? 2: post.frontmatter.foldnum)) || 'nothin’'}
           pathname={fullUrl}
           article
@@ -198,6 +200,13 @@ export const query = graphql`
         foldnum
         title
         description
+        cardImage {
+          childImageSharp{
+            sizes(maxWidth: 750) {
+                ...GatsbyImageSharpSizes
+            }
+          }
+        }
         featuredImage {
                 childImageSharp{
                     sizes(maxWidth: 750) {
