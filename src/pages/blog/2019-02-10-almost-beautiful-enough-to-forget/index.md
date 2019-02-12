@@ -6,13 +6,14 @@ tags: art, beauty, poetry
 layout: post
 foldnum: 3
 description: "The danger of staring into the abyss is captivating, but at some point, you ask the question, 'Why do I want to understand these terrible, narcissistic killers?'."
+cardImage: './videoscreen.png'
 ---
 
 [![Felicity Jones' Monologue in True Story](./videoscreen.png)](https://www.youtube.com/watch?v=v7ymzbbbKA4 "Felicity Jones' Monologue in True Story")
 
 I know many curious folks (myself included) tend to enjoy exploring the narcissistic killers we make movies/series about (Ted Bundy, etc.). The danger of staring into the abyss is captivating, but at some point, you ask the question, 'Why do I want to *understand* these terrible, narcissistic killers?'.
 
- With regards to this question, I keep coming back to a monologue by Felicity Jones' [Jill Barker] in True Story (which, ironically, is about a narcissistic killer..). 
+ With regards to this question, I keep coming back to [a monologue by Felicity Jones' [Jill Barker] in True Story](https://www.youtube.com/watch?v=v7ymzbbbKA4) (which, ironically, is about a narcissistic killer..). 
  
  Jill, watching her boyfriend (a journalist, Michael Finkel played by Jonah Hill) being manipulated from afar by Christian Longo (played by James Franco), goes to visit the accused killer at the county jail. Longo has been convicted of murdering his wife and three children in 2001 and the movie shows an obviously guilty killer playing mind games with Finkel - appealing to Finkel's sense of curiosity and desire for a 'good story'. 
  
