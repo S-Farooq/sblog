@@ -24,3 +24,11 @@ export const LinkIcon = styled(GatsbyLink)(({ theme }) => ({
 
 export const A = Link.withComponent('a');
 export const Aicon = LinkIcon.withComponent('a');
+
+export const HR = styled.div(({ theme }) => ({ 
+  width:'100%', 
+  height:'1px',
+  background: theme.textColor,
+  opacity:0.2, 
+  margin:15,
+}));
