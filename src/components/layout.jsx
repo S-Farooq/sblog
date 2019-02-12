@@ -26,7 +26,7 @@ import AboutFooter from './aboutfooter';
 const minWidthPx = 550;
 const maxWidthPx = 750;
 const spacingPx = 20;
-const centerPadding = `calc((100vw - ${maxWidthPx - (2 * spacingPx)}px) / 2)`;
+const centerPadding = `calc((100vw - ${maxWidthPx - (8 * spacingPx)}px) / 2)`;
 const smallMedia = `@media(max-width: ${minWidthPx}px)`;
 const largeMedia = `@media(min-width: ${maxWidthPx}px)`;
 const textColor = '#333';
@@ -75,11 +75,11 @@ const Layout = ({ children }) => (
           padding: 0,
           fontFamily: 'Lato',
           fontSize:'1.1rem',
-          fontWeight:'400',
+          fontWeight:'300',
         },
         'p':{
           fontSize:'1.2rem',
-          lineHeight: '1.6rem',
+          lineHeight: '1.8rem',
         },
         '::-moz-selection': {
           background: accentColor,
@@ -96,6 +96,7 @@ const Layout = ({ children }) => (
         },
         a: {
           textDecoration: 'none',
+          fontWeight: '400',
           color: accentColor,
           transition: 'color 100ms linear',
           ':hover': {
@@ -121,8 +122,7 @@ const Layout = ({ children }) => (
             paddingRight: `${spacingPx * 2}px`,
           },
           
-          fontSize:'1.2rem',
-          fontWeight:'300',
+          fontSize:'1.1rem',
         },
         '.content': {
         [theme.largeMedia]: {

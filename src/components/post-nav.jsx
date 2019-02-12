@@ -9,7 +9,7 @@ const Wrap = styled.div(({ prev }) => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-start',
-  textTransform: 'uppercase',
+  // textTransform: 'uppercase',
 }));
 
 const Span = styled.span(({ theme }) => ({
@@ -22,7 +22,7 @@ const Link = styled(GatsbyLink)(({ theme }) => ({
   color: theme.textColor,
   textDecoration: 'none',
   fontWeight: 'bold',
-  transition: 'color 250ms linear',
+  transition: 'color 100ms linear',
   ':hover': {
     color: theme.accentColor,
   },

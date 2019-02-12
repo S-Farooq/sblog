@@ -50,6 +50,8 @@ const Article = styled.article(({ theme }) => ({
 
 const CoverImage = styled.div(({ theme }) => ({
   margin: '15px',
+  marginLeft:'40px',
+  marginRight:'40px',
   alignItems: 'center',
   [theme.smallMedia]: {
     margin: '0px',
@@ -97,6 +99,8 @@ const ReadLink = styled(GatsbyLink)(({ theme }) => ({
 
 const TextPreview = styled.div(({ theme }) => ({
   padding: '15px',
+  paddingLeft:'40px',
+  paddingRight:'40px',
   [theme.smallMedia]: {
     padding: '0px',
   },
@@ -104,13 +108,13 @@ const TextPreview = styled.div(({ theme }) => ({
   color: theme.textColor,
   '>p': {
     fontSize:'1.1rem',
-    lineHeight: '1.4rem',
+    lineHeight: '1.6rem',
   },
   'blockquote > p': {
     margin:0,
     paddingLeft:0,
     paddingRight:0,
-    fontSize:'1.1rem',
+    fontSize:'1.0rem',
     lineHeight: '1.4rem',
   },
 }));
