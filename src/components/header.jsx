@@ -5,7 +5,7 @@ import { Link, A, Aicon } from './header-footer-anchor';
 import { FaTwitterSquare, FaMedium, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 
 const Header = styled.header(({ theme }) => ({
-  borderBottom: '4px solid black',
+  // borderBottom: '4px solid #333',
   width: '100vw',
   backgroundColor: theme.headerBgColor,
   padding: `0 ${theme.spacing}`,

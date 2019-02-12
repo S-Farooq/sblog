@@ -38,8 +38,7 @@ const Article = styled.article(({ theme }) => ({
   
   borderRadius: '00px',
   padding: '15px',
-  borderTop: '2px solid rgb(39, 38, 34)',
-  borderTop: '2px solid rgba(39, 38, 34, .7)',
+  borderTop: `1px solid #D6D6D6`,
   WebkitBackgroundClip: 'padding-box', 
   backgroundClip: 'padding-box',
   transition: 'color 100ms linear',

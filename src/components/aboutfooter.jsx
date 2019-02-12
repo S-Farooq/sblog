@@ -1,40 +1,46 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import styled from '@emotion/styled';
-import { A } from './header-footer-anchor';
+import { A, HR } from './header-footer-anchor';
 import ProfilePic from '../images/profilepic.jpeg'; 
 
 import { FaTwitterSquare, FaMedium, FaLinkedin } from 'react-icons/fa';
 
 
 const AboutFooter = styled.footer(({ theme }) => ({
+  ...theme.centerPadding,
+  paddingTop:'15px',
+  paddingBottom:"15px",
   backgroundColor: theme.aboutfooterBgColor,
-  borderTop: '1px black solid',
-  marginTop: '15px',
-  color: theme.headerTextColor,
+  // borderTop: '1px {theme.hoverSpaceColor} solid',
+  // marginTop: '15px',
+  // color: theme.headerTextColor,
+  color: theme.textColor,
   height: '${theme.headerHeight / 2}',
-  textAlign: 'center',
+  // textAlign: 'left',
   opacity: 1.0,
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  fontSize: '1.0rem'
+  // justifyContent: 'left',
+  alignItems: 'flex-start',
 }));
 
 const profilediv = {
   borderRadius: '50px',
-  border: '1px solid black',
+  // border: '1px solid black',
   backgroundImage: 'url('+ ProfilePic + ')',
   backgroundSize: 'cover',
-  width: '50px',
-  height: '50px',
-  marginRight: '5px', 
+  width: '4.0rem',
+  height: '4.0rem',
+  marginRight: '15px', 
 };
 
 const P = styled.p(({ theme }) => ({
-  margin: `${theme.spacingPx / 2}px 0`,
-  opacity: 0.75,
+  // margin: `${theme.spacingPx / 2}px 0`,
+  // opacity: 0.75,
+  lineHeight: '0.8em',
+  margin:0,
+  padding:0,
 }));
 
 const Img = styled.img(({ theme }) => ({
@@ -42,9 +48,26 @@ const Img = styled.img(({ theme }) => ({
   height: '50px'
 }));
 
+const H3 = styled.h3(({ theme }) => ({
+  margin:0,
+  padding:0,
+  opacity:0.9,
+}));
+
+const H4 = styled.h4(({ theme }) => ({
+  textTransform: 'uppercase',
+  opacity:0.6,
+  fontSize:'0.7rem',
+  margin:0,
+  padding:0,
+}));
+
+
+
 const SiteFooter = () => (
 
   <AboutFooter>
+  <HR />
   <div
       style={{
         margin: "5px",
@@ -58,19 +81,21 @@ const SiteFooter = () => (
         <div style={profilediv} />
       </div>
 
-    <div style={{flex: 4}}>
-      <h3>About the Author</h3>
+    <div style={{flex: 7}}>
+      
+      
+        <small>
+        <H3>Shaham Farooq</H3>
+          <H4>Data Scientist - Toronto</H4> 
+          Writes on thinking, reading, and creativity for the amateur.
+          </small>
+          
+        
       </div>
     
       
       </div>
-        <P>
-        <small>
-          Shaham Farooq works as a Data Scientist in Toronto, Canada. 
-          He writes on thinking, reading, and creativity for the amateur.
-          </small>
-          
-        </P>
+        
         
     
 

@@ -20,6 +20,7 @@ import prune from 'underscore.string/prune';
 import { Link as GatsbyLink } from 'gatsby';
 
 import SEO from '../components/SEO/SEO';
+import { HR } from '../components/header-footer-anchor';
 import Img from "gatsby-image";
 
 const Main = styled.main(({ theme }) => ({
@@ -139,8 +140,9 @@ const BlogPost = ({ data, pageContext }) => {
               {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
             </HeaderDate>
             <TagsList tags={post.frontmatter.tags} />
-            
+            <HR />
           </Header>
+          
           {post.frontmatter.featuredImage ? <CoverImage>
             <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
             </CoverImage>: '' }
