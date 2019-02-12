@@ -139,9 +139,9 @@ const Posts = ({ posts }) => {
                 </Time>
               </Header>
               {post.frontmatter.featuredImage ? <CoverImage>
-              <GatsbyLink to={post.frontmatter.path}>
+              {/* <GatsbyLink to={post.frontmatter.path}> */}
                   <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
-              </GatsbyLink>
+              {/* </GatsbyLink> */}
               </CoverImage>: '' }
               <TextPreview
               dangerouslySetInnerHTML={{ __html: getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum) }} />
