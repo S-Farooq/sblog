@@ -37,8 +37,9 @@ const profilediv = {
 
 const P = styled.p(({ theme }) => ({
   // margin: `${theme.spacingPx / 2}px 0`,
-  // opacity: 0.75,
-  lineHeight: '0.8em',
+  opacity: 0.85,
+  fontSize:"1.0em",
+  lineHeight: '1.0em',
   margin:0,
   padding:0,
 }));
@@ -87,7 +88,9 @@ const SiteFooter = () => (
         <small>
         <H3>Shaham Farooq</H3>
           <H4>Data Scientist - Toronto</H4> 
-          Writes on thinking, reading, and creativity for the amateur.
+          <P>
+            Writes on thinking, reading, and creativity for the <i>amateur</i> (*from the Latin <i>amare</i> which means <i>to love</i>).
+            </P>
           </small>
           
         
