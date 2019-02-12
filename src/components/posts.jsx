@@ -104,7 +104,7 @@ const TextPreview = styled.div(({ theme }) => ({
   [theme.smallMedia]: {
     padding: '0px',
   },
-  opacity:0.9,
+  opacity:1.0,
   color: theme.textColor,
   '>p': {
     fontSize:'1.1rem',
