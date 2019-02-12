@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { A, HR } from './header-footer-anchor';
+import { Link as GatsbyLink } from 'gatsby';
 import ProfilePic from '../images/profilepic.jpeg'; 
 
 import { FaTwitterSquare, FaMedium, FaLinkedin } from 'react-icons/fa';
@@ -69,6 +70,7 @@ const SiteFooter = () => (
 
   <AboutFooter>
   <HR />
+  
   <div
       style={{
         margin: "5px",
@@ -78,10 +80,11 @@ const SiteFooter = () => (
         height: "100%",
       }}
     > 
+    <GatsbyLink to="/">
     <div style={{flex: 1}}>
         <div style={profilediv} />
       </div>
-
+      </GatsbyLink>
     <div style={{flex: 7}}>
       
       
@@ -91,14 +94,13 @@ const SiteFooter = () => (
           <P>
             Writes on thinking, reading, and creativity for the <i>amateur</i> (*from the Latin <i>amare</i> which means <i>to love</i>).
             </P>
+            <GatsbyLink to="/"><H4 style={{opacity:0.8}}>Return to Blog</H4></GatsbyLink>
           </small>
-          
-        
       </div>
-    
+      
       
       </div>
-        
+      
         
     
 

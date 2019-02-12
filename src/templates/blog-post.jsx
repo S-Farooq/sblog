@@ -159,8 +159,13 @@ const BlogPost = ({ data, pageContext }) => {
               />
             )}
           </Footer>*/}
+          
         </article>
+        <PostNavWrap>
         
+          <PostNav prev post={prev} />
+          <PostNav next post={next} />
+        </PostNavWrap>
       </Main>
     </Layout>
   );
