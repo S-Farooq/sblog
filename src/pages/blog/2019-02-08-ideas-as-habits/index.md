@@ -17,16 +17,16 @@ Basically, the anger of Adorno was simple: Music has became a commodity or ‘a 
 
 But the interesting response comes from Adorno's Boss:
 
-> Lazarsfeld, when he read this 160-page paper, furiously annotated it with marginal comments like 'idiotic', 'you never know what he's talking about' and - in words that might have struck a chord with Sidney Hook - 'Dialectics as excuse not to have to think in a disciplined way'.
+> Lazarsfeld, when he read this 160-page paper, furiously annotated it with marginal comments like 'idiotic', **'you never know what he's talking about'** and - in words that might have struck a chord with Sidney Hook - **'Dialectics as excuse not to have to think in a disciplined way'**.
 > Lazarsfeld also wrote directly to Adorno, damning his essay: "You pride yourself in attacking other people because they're neurotic and fetishists, but it doesn't occur to you how open you are yourself to such attacks... Don't you think it is a perfect fetishism the way you used Latin words all through your text?"
 <br />&nbsp;&nbsp; &mdash; [Stuart Jeffries, Grand Hotel Abyss](https://www.versobooks.com/books/2501-grand-hotel-abyss)
 
 One might think Lazarsfeld is simply raging when he accuses an intellectual like Adorno of 'a lack of discipline in his thinking', but I think he was on to something. The accusation here is strong because 'Dialectics' is a loaded term for the Marxists - Lazarsfeld is not just saying 'you're contradicting for the sake of contradicting', he's saying "you're relying on a general pre-established recognition such that you don't have to re-recognize the current situation" - essentially, he's accusing Adorno of thinking out of 'habit'. 
 
-It's not so much about if Adorno is right or wrong (Though of course Lazarsfeld's intent is to discredit him), it's about Lazarsfeld seeing a lack of 'judgement' or 'idea proper' in Adorno's recognition. 
+It's not so much about if Adorno is right or wrong (though of course, Lazarsfeld's intent is to discredit him), it's about Lazarsfeld, an academic as well, seeing a lack of 'judgement' or 'idea proper' in Adorno's recognition. 
 
 While habitual application in craft builds skills, in regards to ideas - habitual application degrades? I think about this often because it's a little disturbing - the more I use a concept, I become more familiar with it, I begin to like it, I fall in love with it - and though its usage increases in quality in my perception, is its usage losing quality out there? It seems like we get stuck in a tragic paradox, where even when we trust and love an idea, we must almost mistrust it in its public application. 
 
-I think also about the authors and thinkers I like most, of course they all have ideas that they've become accustomed to using for interpret the world - does that make their thinking undisciplined? Not at all, but that is precisely the challenge - with every new work, I think it becomes more incumbent upon thinkers to provide reassurance to their audience that they've not lost their thinking to 'habit', reestablishing the intellectual quality of their ideas. Is this a responsibility of long standing thinkers? Yes, I think so, but it's also a chance to further prove their dominance. 
+I also think about the thinkers I like most, of course they have ideas that they've become accustomed to using for interpreting the world - does that make their thinking *neccesarily* undisciplined? Not at all, but there is always that suspicion... with every new work, I think it becomes more incumbent on them to provide reassurance that they've not lost their thinking to 'habit'. It's a responsibility, yes, but it's also a chance for the long-standinf thinkers to further prove their dominance. 
 
 And the same follows for us lay-thinkers, it's not a bad idea to go back and reassess every now and then our thinking habits lest we become worthy of Lazarsfeld's complaint: 'you never know what he/she is talking about'.
