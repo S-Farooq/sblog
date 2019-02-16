@@ -31,7 +31,7 @@ I know many curious folks (myself included) tend to enjoy exploring the narcissi
 
 > *[Jill stands up and leaves the visiting room]*
 
-Do we seek this kind of art out under the delusion that it will help us *understand ourselves*? I think of the logical conclusion of feeding our curiosity with such an approach - when the beauty eventually results in us suspending our moral considerations and truly 'forgetting' the evil behind the acts. Isn't a 'forgetting' of that kind an obscene and vulgar behaviour... even a little 'evil' from us?
+Do we seek this kind of art out under the delusion that it will help us *understand ourselves*? I think of the logical conclusion of feeding our curiosity with such an approach - when the beauty eventually results in us suspending our moral considerations and truly 'forgetting' the evil behind the acts. Isn't a 'forgetting' of that kind an obscene and vulgar behaviour... even making ourselves a little 'evil'?
 
 Maybe a little Platonic caution here wouldn't be a bad idea. [Someone once asked if *'Poetry was dead'* on a web chat with the philosopher Slavoj Zizek](https://www.theguardian.com/books/live/2014/oct/06/slavoj-zizek-webchat-absolute-recoil?page=with:block-543538ece4b055589a2e7d69), to which he responded:
 
