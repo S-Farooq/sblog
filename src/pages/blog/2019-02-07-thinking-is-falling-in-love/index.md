@@ -7,7 +7,7 @@ layout: post
 foldnum: 3
 ---
 
-I often find myself thinking about 'what I think about' and the irregular periods of intense engagement versus a general indifference associated with any given topic. I've tried to mentally model this dynamics in various ways (sinusodial - maybe its just an up and down kind of thing?, diffusion - do I gradually bleed out from one idea to another?) but have never quite been able to put a finger on it. There are too many irregularities, too uneven of intervals between one engagement versus another.
+I often find myself thinking about 'what I think about' and the irregular periods of intense engagement versus a general indifference associated with any given topic. I've tried to mentally model this dynamics in various ways (sinusoidal - maybe its just an up and down kind of thing?, diffusion - do I gradually bleed out from one idea to another?) but have never quite been able to put a finger on it. There are too many irregularities, too uneven of intervals between one engagement versus another.
 
 Then I came across [a piece by Paul Griffith that presented another analogy: falling in love](https://www.firstthings.com/article/2018/05/letter-to-an-aspiring-intellectual).
 
@@ -33,9 +33,9 @@ Then the model came up again in a more involved way when I was reading [an inter
 
 Jacobs separates the **'like-minded'** from the **'like-hearted'** - like-hearted being *those who think* ***the way*** *you think* vs. those who *think* ***what*** *you think* . In the last paragraph, he describes generous people, charitable people, honest people, people whose character you trust - isn't he describing a kind of 'love'? A love that's not bound up by an 'in-group' topic set, but by a 'spirit of engagement'. I think the people Jacobs is talking about are people who tend to view the process of 'thinking' less rigidly and more as 'falling in love'.
 
-I *'love so-and-so author/thinker'* takes on a more specific meaning under this model - it doesn't mean I agree with them, or that I necessarily admire them wholistically, or even that I remotely believe in their claims.. it simply means there is something about their 'methods' of thinking that resonates with me. Perhaps this only applies to the way I engage curiosity but I've long given up building up profiles of thinkers based on their content - I measure them more and more on the spirit that Jacobs talks about. I have found again and again that if I find a like-hearted thinker, more often than not, the next topic that I will fall for is right around the corner. In that sense, maybe like love, the choice of thinking is also somewhat blind - to me, this is a nice thought. 
+I *'love so-and-so author/thinker'* takes on a more specific meaning under this model - it doesn't mean I agree with them, or that I necessarily admire them holistically, or even that I remotely believe in their claims.. it simply means there is something about their 'methods' of thinking that resonates with me. Perhaps this only applies to the way I engage curiosity but I've long given up building up profiles of thinkers based on their content - I measure them more and more on the spirit that Jacobs talks about. I have found again and again that if I find a like-hearted thinker, more often than not, the next topic that I will fall for is right around the corner. In that sense, maybe like love, the choice of thinking is also somewhat blind - to me, this is a nice thought. 
 
 **Montaigne** is someone who I often return to for his attitude towards learning:
 > "Off I go, rummaging about in books for sayings which **please** me." <br />&nbsp;&nbsp; &mdash; Montaigne
 
-Maybe in today's polarized, echo chamber-ish times, we all should [adopt a little montaigne in our life](https://www.amazon.com/How-Live-Montaigne-Question-Attempts/dp/1590514831) and go rummaging about to find something to think about.
+Maybe in today's polarized, echo chamber-ish times, we all should [adopt a little Montaigne in our life](https://www.amazon.com/How-Live-Montaigne-Question-Attempts/dp/1590514831) and go rummaging about to find something to think about.
