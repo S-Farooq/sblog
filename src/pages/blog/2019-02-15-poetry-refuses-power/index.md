@@ -29,13 +29,13 @@ When Socrates declares 'I know that I know nothing', his declaration is still of
 > "I'm not here to elaborate on your experiences, I'm here to remind you of your soul."
 <br />&nbsp;&nbsp; &mdash; Katy Bohinc, 'Dear Alain'
 
-Under Bohinc's view of the spectrum, our oscillation could be a reaction to the extremities of power and its lack. Philosophical exploration has us claiming knowledge until it makes us uncomfortable, either from its responsibility or its arrogance. Consequently, we then jump to poetry to dissolve the ego of 'knowing' until its hollowness makes us uncomfortable enough to re-desire power. Though the terminology we use is of 'power', it is not to put poetry in any *'weaker'* position - rather, this oscillation is also what keeps them in dialogue with each other. In [an essay about the book](http://www.katybohinc.com/blog/2017/11/8/dear-alain-authors-note), Bohinc describes the oscillation asserting a political independence:
+Under Bohinc's view of the spectrum, our oscillation could be a reaction to the extremities of power and its lack. Philosophical exploration has us claiming knowledge of truth until it makes us uncomfortable, either from its responsibility or its arrogance. Consequently, we then jump to poetry to dissolve the ego of 'knowing' until its hollowness makes us uncomfortable enough to re-desire power. Though the terminology we use is of 'power', it is not to put poetry in any *'weaker'* position - rather, this oscillation is also what keeps them in dialogue with each other. In [an essay about the book](http://www.katybohinc.com/blog/2017/11/8/dear-alain-authors-note), Bohinc describes the oscillation asserting a political independence:
 
 > "What I really want to say is that **philosophy is not sovereign... And that poetry is quite good at defining itself!** As it has been for thousands of years, regardless of whatever the philosophers have been saying.<br /><br />
 > In some sense, **poetry's and philosophy's irresistible urge to discuss each other for thousands of years is like the longest love affair in history**.."
 <br />&nbsp;&nbsp; &mdash; Katy Bohinc
 
-I also think Bohinc tries to find a transcendence point to bridge poetry and philosophy - I still have not gotten to such a realization. For me, though they are definitely in conversation, they are still separate. 
+I also think Bohinc tries to find a transcendence point to bridge poetry and philosophy - I still have not gotten to such a realization. For me, though they are definitely in conversation, they are still separate.
 
 Philosophy and poetry are gigantic fields, full of nuance and differing styles and though Bohinc selects specific styles to imaginatively engage with, I think one can sympathize with her general expression regardless. Experience also tells us extremes of philosophy and poetry both pose a serious re-entry problem - if you spend a long time on any of those islands, it takes a while to be mentally functional again for everyday living. What Bohinc reminds us is that it could be healthy to greet each field, when we approach it, with an acknowledgment of its danger and a promise of goodbye.
 
