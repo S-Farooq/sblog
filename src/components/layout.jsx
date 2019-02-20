@@ -26,7 +26,7 @@ import AboutFooter from './aboutfooter';
 const minWidthPx = 550;
 const maxWidthPx = 750;
 const spacingPx = 20;
-const centerPadding = `calc((100vw - ${maxWidthPx - (8 * spacingPx)}px) / 2)`;
+const centerPadding = `calc((100vw - ${maxWidthPx - (6 * spacingPx)}px) / 2)`;
 const smallMedia = `@media(max-width: ${minWidthPx}px)`;
 const largeMedia = `@media(min-width: ${maxWidthPx}px)`;
 const textColor = '#333';
@@ -80,6 +80,7 @@ const Layout = ({ children }) => (
         'p':{
           fontSize:'1.2rem',
           lineHeight: '1.8rem',
+          letterSpacing: '-0.01rem',
         },
         'p > img': {
           maxWidth:'100%',
@@ -115,17 +116,17 @@ const Layout = ({ children }) => (
           // background: '#F9F9F9',
           // background: 'rgba(39, 38, 34)',
           // background: 'rgba(39, 38, 34, .05)',
-          background: '#f7f7f7',
+          background: '#f9f9f9',
           padding: `${spacingPx * 1}px`,
           margin: 0,
+          
         },
         'blockquote > p': {
           paddingLeft: `${spacingPx * 1}px`,
           paddingRight: `${spacingPx * 1}px`,
-
           [theme.largeMedia]: {
-            paddingLeft: `${spacingPx * 2}px`,
-            paddingRight: `${spacingPx * 2}px`,
+            paddingLeft: `${spacingPx * 1}px`,
+            paddingRight: `${spacingPx * 1}px`,
           },
           
           fontSize:'1.1rem',
