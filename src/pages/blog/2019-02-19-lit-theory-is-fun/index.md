@@ -4,13 +4,16 @@ date: "2019-02-19"
 path: /literary-theory-is-fun
 tags: literature, analysis, pleasure, reading
 layout: post
-foldnum: 1
-description: "A critique of critiquing modern literary theory as 'not fun'."
+foldnum: 2
+description: "A critique of critiquing modern literary theory as 'not fun'. 'All knowledge is connected to all other knowledge. The fun is in making the connections.'"
+featuredImage: "./coverscraph.jpg"
 ---
 
 A [recent article, critiquing modern literary theory,](https://quillette.com/2019/02/15/high-theory-and-low-seriousness/) brought up some questions for readers of my kind - i.e. those who read primarily for pleasure. While academia may have a certain viewpoint of what literary theory should behave like, I wonder if that same criteria bleeds over to the amateur reader? I'll quote parts of the article below and question the assumptions.
 
-Definition of Literary Theory:
+#### Definition of Literary Theory:
+
+![](./littheory.jpg)
 
 >"...literary theory in recent years has sought to explain the degree to which the text is more the product of a culture than an individual author and in turn how those texts help to create the culture...
 <br/><br/>
@@ -40,7 +43,9 @@ Tell about it.
 
 *Contradictory* interpretations? Sure, but *dull* is a biased term here.. only because the writer does not find Marx, Freud, Jung, or Religious interesting? For anyone who appreciates them, why would *dull* apply? It seems the complaint here is more so ['why wasn't I consulted?' (WWIC)](https://www.ftrain.com/wwic). And then, what exactly is *imprecise* in fictional interpretation? Is *precision* to get to the author's intention - but is that really the point of literary theory? What if the [Author is Dead?](http://www.tbook.constantvzw.org/wp-content/death_authorbarthes.pdf)
 
-I can't seem to understand why this point detracts from the pleasure of reading.
+I can't seem to understand why this point detracts from the pleasure of reading. If we treat literature as an aggregated image from a greater culture, literary theory can be seen as an attempt to transform literature back into the greater cultural coordinates. And we have a great analogy of multiple viewpoints (all 'true') in the example of [Datasauras: Same stats, different graphs](https://www.autodeskresearch.com/publications/samestats):
+
+![](https://d2f99xq7vri1nk.cloudfront.net/DinoSequentialSmaller.gif)
 
 ## Understanding takes away from Enjoyment?
 
@@ -72,14 +77,15 @@ Why does theory *have* to be predictive? In sociology, there is often a conflati
 
 Scientific theories explain the real universe and are thus refuted by inconsistency found in reality (i.e. contradicting empirical evidence). Literary theory explain the fictional universe and are thus refuted by inconsistency found in the narrative (i.e. lack of coherence between theory and plot). The sly assumption in this critique is that literary theory is to find the 'Truth' like science, once again, what is the 'truth' in fiction? Similar to sociology, we compare explanatory theories by how compelling of a case they make to describe the subjects. If Marxist theory works well to define the plot of a novel, then literary theory interprets it through Marxism. For someone else, religious narratives work better. Different interpretations make more compelling cases for different people, so what? We feel in different ways - we see things in different ways. The rebuttals in literature differ than in science, why should they not? Again, there is a patronizing attitude here which hints that the field of literature has to adopt the methodologies of scientific/philosophical hypothesizing. [Katy Bohinc's answer to 'poetry embracing contradiction while philosophy does not'](http://www.openlettersmonthly.com/issue/interview-with-katy-bohinc-author-of-dear-alain/) is relevant here:
 
->"As for contradiction, yes! All I can say is yes! Contradiction is even present in mathematics... contradiction and error are similarly necessary elements for the fabric of the universe as we know it. It’s deep in the fabric of translation, which naturally arises because we are, in fact, individuals. But there’s a million contradictory things I could say about contradiction. Part of why I love being a poet – and not a philosopher – is that I don’t have to make sense. Badiou always has to “make sense,” in that his thoughts have to build into one complete system, largely. But *ugh*, to me that seems terrible, like being a statue! Because poetry doesn’t have the limitation of logic it can be interested in everything not logical, which is significant. It can turn on a dime and go onto the street or into outer space. In a sense, the limitation of poetry is that it can’t be too straightforward, or really, too proven. It takes “something else.” A jump, a leap, a romanticism, a star, a heart."
+>"As for contradiction, yes! All I can say is yes! **Contradiction is even present in mathematics... contradiction and error are similarly necessary elements for the fabric of the universe as we know it. It’s deep in the fabric of translation, which naturally arises because we are, in fact, individuals.** But there’s a million contradictory things I could say about contradiction. Part of why I love being a poet – and not a philosopher – is that I don’t have to make sense. Badiou always has to “make sense,” in that his thoughts have to build into one complete system, largely. But *ugh*, to me that seems terrible, like being a statue! Because poetry doesn’t have the limitation of logic it can be interested in everything not logical, which is significant. It can turn on a dime and go onto the street or into outer space. In a sense, the limitation of poetry is that it can’t be too straightforward, or really, too proven. It takes “something else.” A jump, a leap, a romanticism, a star, a heart."
 <br />&nbsp;&nbsp; &mdash; Katy Bohinc
 
 Appropriating Bohinc's description for poetry, the rules under literary theory are different, maybe they're interpreting hearts and leaps, not just logic - this isn't a problem.
 
 As for the '*swelling canon of contradictory deepities*', all I have to say is:
 
-![](./nerdzone.jpg)
+![alt text](https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif)
+<!-- ![](./nerdzone.jpg) -->
 
 ## Tedious theorizing is mirthless?
 
@@ -93,3 +99,10 @@ Finally, on the literary, tedious theorists who you may view as a bore, I'll ref
 <br/><br/>
 > We might, no doubt, find it a nuisance to count all the blades of grass or all the leaves of the trees; but this would not be because of our boldness or gaiety, but because of our lack of boldness and gaiety. The bore would go onward, bold and gay, and find the blades of grass as splendid as the swords of an army. **The bore is stronger and more joyous than we are**; he is a demigod--nay, he is a god. For it is the gods who do not tire of the iteration of things; to them the nightfall is always new, and the last rose as red as the first.
 <br />&nbsp;&nbsp; &mdash; G.K. Chesterton
+
+## Fun is in Making the Connections
+
+I will end with a quote from 'the mummy doctor' Aufderheide who managed to be that bore to actually find medical and anthropological information in something as dead as mummies:
+
+> "All knowledge is connected to all other knowledge. **The fun is in making the connections.**” 
+<br />&nbsp;&nbsp; &mdash; [Arthur Aufderheide](https://www.newyorker.com/magazine/2005/05/16/the-mummy-doctor)
