@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import styled from '@emotion/styled';
-import { Link, A, Aicon } from './header-footer-anchor';
-import { FaTwitterSquare, FaMedium, FaLinkedin, FaGithubSquare,FaEdit } from 'react-icons/fa';
+import { Link, A, Aicon, AiconLink } from './header-footer-anchor';
+import { FaTwitterSquare, FaMedium, FaLinkedin, 
+  FaHeadphonesAlt,FaGithubSquare,FaEdit, FaFolder,FaBookOpen } from 'react-icons/fa';
+
 
 const Header = styled.header(({ theme }) => ({
   // borderBottom: '4px solid #333',
@@ -22,6 +24,7 @@ const Header = styled.header(({ theme }) => ({
     height: '50px',
     lineHeight: '20px',
     paddingBottom: '15px',
+    
   },
   [theme.largeMedia]: {
     ...theme.centerPadding,
@@ -37,6 +40,7 @@ const H1 = styled.h1(({ theme }) => ({
   margin: 0,
   [theme.smallMedia]: {
     fontSize: '1rem',
+    visibility: 'hidden',
   },
 }));
 
@@ -48,11 +52,35 @@ const Small = styled.small({
 const Nav = styled.nav(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
+  alignItems:'center',
   justifyContent: 'space-between',
+  [theme.smallMedia]: {
+    paddingLeft: 50,
+    paddingRight: 50,
+  },
   a: {
     marginLeft: theme.spacing,
+    alignText: 'center',
+    // verticalAlign:'middle',
+    lineHeight:1,
   },
 }));
+
+
+const AiconLabel = styled.span(({ theme }) => ({
+  fontSize: '30%',
+  margin:0,
+  padding:0,
+  display:'block',
+  // verticalAlign:'middle',
+  // lineHeight:0,
+  // position:'relative',
+  // top:'-3.7em',
+  // [theme.smallMedia]: {
+  //   top:'-0.8em',
+  // },
+}));
+
 
 const SiteHeader = () => (
   <Header>
@@ -60,23 +88,33 @@ const SiteHeader = () => (
       <Small>Shaham's</Small>
     </H1>
     <Nav>
-      <Link to="/">Blog</Link>
-      <A href="https://shaham.me">Projects</A>
+
+    <AiconLink to="/">
+      <FaBookOpen /><AiconLabel>Blog</AiconLabel>
+        </AiconLink>
+
+        {/* <AiconLink to="/music/">
+      <FaHeadphonesAlt /><AiconLabel>Music</AiconLabel>
+        </AiconLink> */}
+
+      <Aicon inline href="https://shaham.me">
+      <FaFolder /><AiconLabel>Projects</AiconLabel>
+        </Aicon>
 
       <Aicon inline href="https://twitter.com/shahamfarooq">
-          <FaTwitterSquare />
+      <FaTwitterSquare /><AiconLabel>Twitter</AiconLabel>
         </Aicon>
 
-        <Aicon inline href="https://medium.com/@shahamfarooq">
-          <FaMedium />
-        </Aicon>
+        {/* <Aicon inline href="https://medium.com/@shahamfarooq">
+          <FaMedium /><AiconLabel>Medium</AiconLabel>
+        </Aicon> */}
 
-        <Aicon inline href="https://www.linkedin.com/in/syed-shaham-farooq-1b851a64/">
-          <FaLinkedin />
-        </Aicon>
+        {/* <Aicon inline href="https://www.linkedin.com/in/syed-shaham-farooq-1b851a64/">
+          <FaLinkedin /><AiconLabel>Linkedin</AiconLabel>
+        </Aicon> */}
 
         <Aicon inline href="https://www.instagram.com/randomscraphs/">
-          <FaEdit />
+          <FaEdit /><AiconLabel>Scraphs</AiconLabel>
         </Aicon>
     </Nav>
   </Header>

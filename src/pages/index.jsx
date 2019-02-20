@@ -11,7 +11,7 @@ const Index = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
   <Layout>
   <SEO twitterCardType='summary'/>
     <CenterWrap>
-      <h2>Posts</h2>
+      <h2>Blog Posts</h2>
       <Posts posts={posts.map(post => post.node)} />
     </CenterWrap>
   </Layout>
@@ -31,7 +31,10 @@ export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {frontmatter: {exclude: {ne: 1}}}
+      filter: { 
+        frontmatter: {exclude: {ne: 1} }, 
+        fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}
+        }
     ) {
       edges {
         node {

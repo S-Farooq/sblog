@@ -79,7 +79,10 @@ module.exports = {
             allMarkdownRemark(
               limit: 1000,
               sort: { order: DESC, fields: [frontmatter___date] }
-              filter: {frontmatter: {exclude: {ne: 1}}}
+              filter: { 
+                frontmatter: {exclude: {ne: 1} }, 
+                fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}
+                }
             ) {
               edges {
                 node {
