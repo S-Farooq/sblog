@@ -47,6 +47,8 @@ I can't seem to understand why this point detracts from the pleasure of reading.
 
 ![](https://d2f99xq7vri1nk.cloudfront.net/DinoSequentialSmaller.gif)
 
+Point being, different theorists can construct different graphs, so what? How can a method that can construct a star *and* a dinosaur from the same material be sweepingly labelled as *dull*?
+
 ## Understanding takes away from Enjoyment?
 
 > **Article:** ...the average academic critic tried to understand literature and thus ruined the enjoyment of it...<br/>

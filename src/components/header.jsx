@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link, A, Aicon } from './header-footer-anchor';
-import { FaTwitterSquare, FaMedium, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import { FaTwitterSquare, FaMedium, FaLinkedin, FaGithubSquare,FaEdit } from 'react-icons/fa';
 
 const Header = styled.header(({ theme }) => ({
   // borderBottom: '4px solid #333',
@@ -75,8 +75,8 @@ const SiteHeader = () => (
           <FaLinkedin />
         </Aicon>
 
-        <Aicon inline href="https://github.com/S-Farooq">
-          <FaGithubSquare />
+        <Aicon inline href="https://www.instagram.com/randomscraphs/">
+          <FaEdit />
         </Aicon>
     </Nav>
   </Header>
