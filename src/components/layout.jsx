@@ -81,6 +81,12 @@ const Layout = ({ children }) => (
           fontSize:'1.2rem',
           lineHeight: '1.8rem',
         },
+        'p > img': {
+          maxWidth:'100%',
+          display:'block',
+          margin:'0px !important',
+
+        },
         '::-moz-selection': {
           background: accentColor,
         },
