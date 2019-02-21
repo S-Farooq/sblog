@@ -81,7 +81,7 @@ module.exports = {
               sort: { order: DESC, fields: [frontmatter___date] }
               filter: { 
                 frontmatter: {exclude: {ne: 1} }, 
-                fileAbsolutePath: {regex: "/(blog)/.*\\md$/"}
+                fileAbsolutePath: {regex: "/(blog)/.*[.]md$/"}
                 }
             ) {
               edges {
