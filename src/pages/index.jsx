@@ -32,7 +32,7 @@ export const query = graphql`
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { 
-        frontmatter: {exclude: {ne: 1} }, 
+        frontmatter: {exclude: {ne: 1}}, 
         fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}
         }
     ) {
