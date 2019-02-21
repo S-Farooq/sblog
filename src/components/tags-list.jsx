@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 const Small = styled.small({
   opacity:1.0,
   fontSize: '0.9rem',
+  textAlign:'center',
 });
 
 const A = styled(Link)(({ theme }) => ({

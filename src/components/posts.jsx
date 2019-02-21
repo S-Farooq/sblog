@@ -129,7 +129,7 @@ const Posts = ({ posts }) => {
     <section>
       {years.map(year => (
         <section key={year}>
-          <H3>{year}</H3>
+          {/* <H3>{year}</H3> */}
           {grouped[year].map(post => (
             <Article key={post.frontmatter.path}>
               <Header>

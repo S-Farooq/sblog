@@ -2,7 +2,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { A } from './header-footer-anchor';
-import { FaTwitterSquare, FaMedium, FaLinkedin, FaGithubSquare, FaEdit } from 'react-icons/fa';
+import { FaTwitterSquare, FaMedium, FaLinkedin, FaInstagram,
+  FaHeadphonesAlt,FaGithubSquare,FaEdit, FaFolder,FaBook } from 'react-icons/fa';
 
 
 const Footer = styled.footer(({ theme }) => ({
@@ -39,8 +40,8 @@ const SiteFooter = () => (
           <FaLinkedin />
         </A>
 
-        <A inline href="https://www.instagram.com/randomscraphs/">
-          <FaEdit />
+        <A inline href="https://www.instagram.com/shahamfarooq/">
+          <FaInstagram />
         </A>
         
           </div>

@@ -43,6 +43,8 @@ const theme = {
   spacingPx,
   spacing: `${spacingPx}px`,
   headerHeight: '75px',
+  underHeaderHeight: '50px',
+  contentTopPadding: '75px',
   textColor,
   accentColor,
   maxWidthPx,
@@ -133,7 +135,7 @@ const Layout = ({ children }) => (
         },
         '.content': {
         [theme.largeMedia]: {
-            paddingTop:'75px',
+            paddingTop:theme.contentTopPadding,
           },
         },
         '.gatsby-resp-image-image': {
@@ -173,8 +175,10 @@ const Layout = ({ children }) => (
           </Helmet>
           <Header />
           <div class='content'>
+          
           {children}
           </div>
+          
           <AboutFooter />
           <Footer />
         </main>
