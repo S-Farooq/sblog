@@ -97,9 +97,13 @@ const SiteHeader = () => (
       <FaHeadphonesAlt /><AiconLabel>Music</AiconLabel>
         </AiconLink> */}
 
-      <Aicon inline href="https://shaham.me">
+        <AiconLink to="/projects/">
       <FaFolder /><AiconLabel>Projects</AiconLabel>
-        </Aicon>
+        </AiconLink>
+
+      {/* <Aicon inline href="https://shaham.me">
+      <FaFolder /><AiconLabel>Projects</AiconLabel>
+        </Aicon> */}
 
       <Aicon inline href="https://twitter.com/shahamfarooq">
       <FaTwitterSquare /><AiconLabel>Twitter</AiconLabel>

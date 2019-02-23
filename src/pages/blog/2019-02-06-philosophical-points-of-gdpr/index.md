@@ -2,17 +2,19 @@
 title: "Points of Philosophical Interest from GDPR"
 date: "2019-02-06"
 path: /philosophy-from-gdpr
-tags: data, philosophy, tech
+tags: data, philosophy, tech, data-science
 layout: post
 foldnum: 2
-exclude: 1
+featuredImage: "./infograph.jpg"
+description: "Brief description and philosophical implications of new GDPR data regulation around data privacy and consent."
+exclude: 0
 ---
 
 Researching GDPR and its impact, I came across some elements of GDPR that piqued my interest for what they implied about our culture and paradigms around data privacy:
 
-> ## A. What is ‘free’ consent?
-> ## B. Data as an ‘object’ vs. data as an ‘experience of you’
-> ## C. To be forgotten by the network beyond the individual
+**A. What is ‘free’ consent?<br/>
+B. Data as an ‘object’ vs. data as an ‘experience of you’<br/>
+C. To be forgotten by the network beyond the individual**
 
 ## Introduction
 
@@ -26,7 +28,7 @@ GDPR is the EU’s **General Data Protection Regulation** that came into effect 
 
 * **Data Joint-Controller:** Entity determining purpose and means by which *personal data* is processed together with one or more entities
 
-* **Data Processor:** Processes *personal data* on behalf of the d*ata controller*
+* **Data Processor:** Processes *personal data* on behalf of the *data controller*
 
 There are multiple resources to understand the scope of GDPR, I’ve found the following summaries are great to understand the main points:
 

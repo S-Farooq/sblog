@@ -47,12 +47,43 @@ async function generateContent(createPage, graphqlResults) {
   const blogPostTemplate = path.resolve('src/templates/blog-post.jsx');
 
   const posts = graphqlResults.data.allMarkdownRemark.edges;
+  const blogPosts = posts.filter(post => {  if (post.node.fileAbsolutePath.includes("/blog/")) return post; });
+  const projectPosts = posts.filter(post => {  if (post.node.fileAbsolutePath.includes("/projects/")) return post; });
+  
 
   createTagPages(createPage, posts);
 
-  posts.forEach(({ node }, index) => {
-    const prev = index === posts.length - 1 ? false : posts[index + 1].node;
-    const next = index === 0 ? false : posts[index - 1].node;
+  // posts.forEach(({ node }, index) => {
+  //   const prev = index === posts.length - 1 ? false : posts[index + 1].node;
+  //   const next = index === 0 ? false : posts[index - 1].node;
+  //   createPage({
+  //     path: node.frontmatter.path,
+  //     component: blogPostTemplate,
+  //     context: {
+  //       refPath: node.frontmatter.path,
+  //       prev: prev && pick(prev, ['frontmatter.title', 'frontmatter.path']),
+  //       next: next && pick(next, ['frontmatter.title', 'frontmatter.path']),
+  //     },
+  //   });
+  // });
+
+  blogPosts.forEach(({ node }, index) => {
+    const prev = index === blogPosts.length - 1 ? false : blogPosts[index + 1].node;
+    const next = index === 0 ? false : blogPosts[index - 1].node;
+    createPage({
+      path: node.frontmatter.path,
+      component: blogPostTemplate,
+      context: {
+        refPath: node.frontmatter.path,
+        prev: prev && pick(prev, ['frontmatter.title', 'frontmatter.path']),
+        next: next && pick(next, ['frontmatter.title', 'frontmatter.path']),
+      },
+    });
+  });
+
+  projectPosts.forEach(({ node }, index) => {
+    const prev = index === projectPosts.length - 1 ? false : projectPosts[index + 1].node;
+    const next = index === 0 ? false : projectPosts[index - 1].node;
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
@@ -84,6 +115,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
           html
           id
           timeToRead
+          fileAbsolutePath
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path

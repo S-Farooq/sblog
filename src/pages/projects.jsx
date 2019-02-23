@@ -6,18 +6,32 @@ import CenterWrap from '../components/center-wrap';
 import Posts from '../components/posts';
 import postShape from '../shapes/post';
 import SEO from '../components/SEO/SEO';
+import styled from '@emotion/styled';
 
-const Index = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
+const P = styled.p(() => ({
+  lineHeight: '1.5em',
+  fontWeight: 400,
+  fontSize:'0.8em',
+  opacity:0.7,
+}));
+
+const Projects = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
   <Layout>
   <SEO twitterCardType='summary'/>
     <CenterWrap>
-      <h2>Blog Posts</h2>
+      <h2>Projects</h2>
+      <P>
+      You can read about 'all these things that I've done'. I generally do side projects around 
+      Data Science and its potential usage for non-technical things 
+      (fiction literary analysis, song recommendations, philosophy readings, etc.). 
+      Occasionally, I'll write an essay.
+        </P>
       <Posts posts={posts.map(post => post.node)} />
     </CenterWrap>
   </Layout>
 );
 
-Index.propTypes = {
+Projects.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(postShape),
@@ -25,22 +39,21 @@ Index.propTypes = {
   }).isRequired,
 };
 
-export default Index;
+export default Projects;
 
 export const query = graphql`
-  query IndexQuery {
+  query ProjectsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { 
         frontmatter: {exclude: {ne: 1}}, 
-        fileAbsolutePath: {regex: "/(\/blog)/.*\\.md$/"}
+        fileAbsolutePath: {regex: "/(\/projects)/.*\\.md$/"}
         }
     ) {
       edges {
         node {
           id
           html
-          fileAbsolutePath
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
