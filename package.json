@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
     "@fortawesome/free-solid-svg-icons": "^5.7.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@gatsby-contrib/gatsby-transformer-ipynb": "^0.5.8",
     "dateformat": "^2.0.0",
     "emotion-theming": "^10.0.5",
     "gatsby": "^2.0.77",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import CenterWrap from '../components/center-wrap';
@@ -12,7 +12,6 @@ const Index = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
   <Layout>
   <SEO twitterCardType='summary'/>
     <CenterWrap>
-      
       <Posts posts={posts.map(post => post.node)} title="Blog Posts" />
     </CenterWrap>
   </Layout>
