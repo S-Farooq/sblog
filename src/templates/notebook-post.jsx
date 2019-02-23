@@ -230,38 +230,38 @@ NotebookPost.propTypes = {
   pageContext: pageContextShape.isRequired,
 };
 
-export default NotebookPost;
+// export default NotebookPost;
 
-export const query = graphql`
-  query NotebookPostByPath($refPath: String!) {
-    site {
-      siteMetadata {
-        title
-        siteUrl
-      }
-    }
-    jupyterNotebook(metadata: {kernelspec: {name: { eq: $refPath }} }) {
-        id
-        metadata {
-            kernelspec {
-                name
-                language
-                display_name
-            }
-        }
-        html
-        json {
-            nbformat
-            nbformat_minor
-            cells {
-                cell_type
-                execution_count
-            }
-        }
-        internal {
-            content
-        }
-    }
+// export const query = graphql`
+//   query NotebookPostByPath($refPath: String!) {
+//     site {
+//       siteMetadata {
+//         title
+//         siteUrl
+//       }
+//     }
+//     jupyterNotebook(metadata: {kernelspec: {name: { eq: $refPath }} }) {
+//         id
+//         metadata {
+//             kernelspec {
+//                 name
+//                 language
+//                 display_name
+//             }
+//         }
+//         html
+//         json {
+//             nbformat
+//             nbformat_minor
+//             cells {
+//                 cell_type
+//                 execution_count
+//             }
+//         }
+//         internal {
+//             content
+//         }
+//     }
       
-  }
-`;
+//   }
+// `;
