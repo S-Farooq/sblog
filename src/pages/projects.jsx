@@ -19,14 +19,7 @@ const Projects = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
   <Layout>
   <SEO twitterCardType='summary'/>
     <CenterWrap>
-      <h2>Projects</h2>
-      <P>
-      You can read about 'all these things that I've done'. I generally do side projects around 
-      Data Science and its potential usage for non-technical things 
-      (fiction literary analysis, song recommendations, philosophy readings, etc.). 
-      Occasionally, I'll write an essay.
-        </P>
-      <Posts posts={posts.map(post => post.node)} />
+      <Posts posts={posts.map(post => post.node)} title="Projects" />
     </CenterWrap>
   </Layout>
 );
@@ -61,6 +54,7 @@ export const query = graphql`
             tags
             foldnum
             exclude
+            readmore
             featuredImage {
                 childImageSharp{
                     fluid(maxWidth: 750) {

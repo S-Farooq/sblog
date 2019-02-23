@@ -52,3 +52,17 @@ export const HR = styled.div(({ theme }) => ({
   opacity:0.2, 
   margin:15,
 }));
+
+export const AiconLabel = styled.span(({ theme }) => ({
+  fontSize: '30%',
+  margin:0,
+  padding:0,
+  display:'block',
+  // verticalAlign:'middle',
+  // lineHeight:0,
+  // position:'relative',
+  // top:'-3.7em',
+  // [theme.smallMedia]: {
+  //   top:'-0.8em',
+  // },
+}));

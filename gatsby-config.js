@@ -1,12 +1,12 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    url: 'https://blog.shaham.me', // No trailing slash allowed!
+    url: 'https://shaham.ca', // No trailing slash allowed!
     image: "/images/profilepic.jpeg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@shahamfarooq",
     author: 'Shaham Farooq',
     title: "Shaham's Blog",
-    siteUrl: 'https://blog.shaham.me',
+    siteUrl: 'https://shaham.ca',
     description: "Writings on thinking, reading, and creativity for the amateur. + Data Science.",
     owner: 'Shaham Farooq',
     facebookAppID: '',

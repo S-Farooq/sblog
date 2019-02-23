@@ -7,6 +7,7 @@ layout: post
 foldnum: 1
 featuredImage: "./twittinfoflow.png"
 description: "Exploring NLP methods to quantify and profile tweets and users in a twitter community based on their internal and external information flow."
+readmore: https://towardsdatascience.com/information-flow-within-twitter-community-def9e939bb99
 ---
 
 Exploring NLP methods to quantify and profile tweets and users in a twitter community based on their internal and external information flow.

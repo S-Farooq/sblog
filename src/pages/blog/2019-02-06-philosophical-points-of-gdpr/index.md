@@ -8,6 +8,7 @@ foldnum: 2
 featuredImage: "./infograph.jpg"
 description: "Brief description and philosophical implications of new GDPR data regulation around data privacy and consent."
 exclude: 0
+readmore: https://medium.com/@shahamfarooq/philosophy-of-gdpr-264ece34450
 ---
 
 Researching GDPR and its impact, I came across some elements of GDPR that piqued my interest for what they implied about our culture and paradigms around data privacy:

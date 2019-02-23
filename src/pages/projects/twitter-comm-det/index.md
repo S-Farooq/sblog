@@ -7,6 +7,7 @@ layout: post
 foldnum: 1
 featuredImage: "./twitcommdet.png"
 description: "A Graph-based approach to community detection in Twitter Networks by modelling information flow between users."
+readmore: https://towardsdatascience.com/generating-twitter-ego-networks-detecting-ego-communities-93897883d255
 ---
 
 A Graph-based approach to community detection in Twitter Networks by modelling information flow between users.

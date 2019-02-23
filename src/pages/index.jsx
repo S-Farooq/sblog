@@ -7,12 +7,13 @@ import Posts from '../components/posts';
 import postShape from '../shapes/post';
 import SEO from '../components/SEO/SEO';
 
+
 const Index = ({ data: { allMarkdownRemark: { edges: posts } } }) => (
   <Layout>
   <SEO twitterCardType='summary'/>
     <CenterWrap>
-      <h2>Blog Posts</h2>
-      <Posts posts={posts.map(post => post.node)} />
+      
+      <Posts posts={posts.map(post => post.node)} title="Blog Posts" />
     </CenterWrap>
   </Layout>
 );
@@ -48,6 +49,7 @@ export const query = graphql`
             tags
             foldnum
             exclude
+            readmore
             featuredImage {
                 childImageSharp{
                     fluid(maxWidth: 750) {
