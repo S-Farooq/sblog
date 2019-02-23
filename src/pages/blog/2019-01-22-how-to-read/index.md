@@ -4,9 +4,10 @@ date: "2019-01-22"
 path: /how-to-read
 tags: reading, chart
 layout: post
-foldnum: 4
+foldnum: 2
 featuredImage: './chart.jpeg'
 description: "Summary visualization of 'How to Read a Book'"
+readmore: https://medium.com/@shahamfarooq/adlers-how-to-read-a-book-flow-chart-cb4547c26be1
 ---
 
 

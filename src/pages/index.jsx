@@ -48,6 +48,7 @@ export const query = graphql`
             tags
             foldnum
             exclude
+            readmore
             featuredImage {
                 childImageSharp{
                     fluid(maxWidth: 750) {

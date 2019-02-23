@@ -97,6 +97,22 @@ const ReadLink = styled(GatsbyLink)(({ theme }) => ({
   },
 }));
 
+const ReadLinkA = styled.a(({ theme }) => ({
+  textDecoration: 'none',
+  padding: '15px',
+  fontSize:'1.2rem',
+  color: theme.accentColor,
+  textAlign:'right',
+  transition: 'color 100ms linear',
+  ':hover': {
+    color: theme.textColor,
+  },
+  borderBottom: '10px',
+  [theme.smallMedia]: {
+    padding: '0px',
+  },
+}));
+
 const TextPreview = styled.div(({ theme }) => ({
   padding: '15px',
   paddingLeft:'40px',
@@ -149,9 +165,10 @@ const Posts = ({ posts }) => {
               </CoverImage>: '' }
               <TextPreview
               dangerouslySetInnerHTML={{ __html: getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum) }} />
-              <ReadLink to={post.frontmatter.path}>
-                    Read More...
-              </ReadLink>
+              
+              {post.frontmatter.readmore ? 
+                <ReadLinkA inline href={post.frontmatter.readmore}>Read More...</ReadLinkA> : 
+              <ReadLink to={post.frontmatter.path}>Read More...</ReadLink> }
               <footer style={{marginTop:"10px"}}>
                 <TagsList tags={post.frontmatter.tags} />
               </footer>

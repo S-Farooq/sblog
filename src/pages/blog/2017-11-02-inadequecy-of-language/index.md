@@ -8,6 +8,7 @@ foldnum: 1
 exclude: 0
 featuredImage: "./circuit1.jpeg"
 description: "Maybe one of the most tragic love stories is between language and the need for meaningful communication. Neither is completely capable of each other."
+readmore: https://medium.com/indian-thoughts/on-the-inadequacy-of-language-6371b08db9bf
 ---
 
 Maybe one of the most tragic love stories is between language and the need for meaningful communication. Neither is completely capable of each other. Neither asks for help. Sometimes, in the middle of conversation, attempting to transfer our inner workings on to another, we are hit with the despairing realization, "It’s not working, I’m not getting through, I can’t". Suddenly, something gets caught in the gears of words and tones, and the heavy feeling of something noncommunicable takes over our limbs.
