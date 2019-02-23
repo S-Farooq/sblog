@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import styled from '@emotion/styled';
-import { A, HR } from './header-footer-anchor';
+import { A, HR, Aicon2 } from './header-footer-anchor';
 import { Link as GatsbyLink } from 'gatsby';
 import ProfilePic from '../images/profilepic.jpeg'; 
 
@@ -64,8 +64,6 @@ const H4 = styled.h4(({ theme }) => ({
   padding:0,
 }));
 
-
-
 const SiteFooter = () => (
 
   <AboutFooter>
@@ -94,7 +92,7 @@ const SiteFooter = () => (
           <P>
             Writes on thinking, reading, and creativity for the <i>amateur</i> (*from the Latin <i>amare</i> which means <i>to love</i>)  + Data Science.
             </P>
-            <GatsbyLink to="/"><H4 style={{opacity:0.8}}>Return to Blog</H4></GatsbyLink>
+            <Aicon2 inline href="#header"><H4 style={{opacity:1.0}}>Return to Top</H4></Aicon2>
           </small>
       </div>
       

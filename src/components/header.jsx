@@ -3,7 +3,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Link, A, Aicon, AiconLink, AiconLabel } from './header-footer-anchor';
 import { FaTwitterSquare, FaMedium, FaLinkedin, 
-  FaHeadphonesAlt,FaGithubSquare,FaEdit, FaFolder,FaBookOpen } from 'react-icons/fa';
+  FaHeadphonesAlt,FaGithubSquare,FaEdit, FaFolder,FaBookOpen,
+  FaUserSecret } from 'react-icons/fa';
 
 
 const Header = styled.header(({ theme }) => ({
@@ -21,9 +22,11 @@ const Header = styled.header(({ theme }) => ({
     flexDirection: 'column',
     textAlign: 'center',
     justifyContent: 'space-between',
-    height: '50px',
-    lineHeight: '20px',
+    height: '70px',
+    lineHeight: '30px',
     paddingBottom: '15px',
+    paddingLeft: '25px',
+    paddingRight: '25px',
     
   },
   [theme.largeMedia]: {
@@ -39,8 +42,8 @@ const H1 = styled.h1(({ theme }) => ({
   fontSize: '1.25rem',
   margin: 0,
   [theme.smallMedia]: {
-    fontSize: '1rem',
-    visibility: 'hidden',
+    fontSize: '1.0rem',
+    
   },
 }));
 
@@ -54,13 +57,17 @@ const Nav = styled.nav(({ theme }) => ({
   flexDirection: 'row',
   alignItems:'center',
   justifyContent: 'space-between',
-  [theme.smallMedia]: {
-    paddingLeft: 50,
-    paddingRight: 50,
-  },
+  // [theme.smallMedia]: {
+  //   paddingLeft: 50,
+  //   paddingRight: 50,
+  // },
   a: {
     marginLeft: theme.spacing,
     alignText: 'center',
+    [theme.smallMedia]: {
+      margin:0,
+    },
+    
     // verticalAlign:'middle',
     lineHeight:1,
   },
@@ -73,7 +80,7 @@ const Nav = styled.nav(({ theme }) => ({
 const SiteHeader = () => (
   <Header>
     <H1>
-      <Small>Shaham's</Small>
+      <Small>Shaham</Small>
     </H1>
     <Nav>
 
@@ -93,8 +100,8 @@ const SiteHeader = () => (
       <FaFolder /><AiconLabel>Projects</AiconLabel>
         </Aicon> */}
 
-      <Aicon inline href="https://twitter.com/shahamfarooq">
-      <FaTwitterSquare /><AiconLabel>Twitter</AiconLabel>
+      <Aicon inline href="https://twitter.com/randomscraphs">
+      <FaTwitterSquare /><AiconLabel>Subscribe</AiconLabel>
         </Aicon>
 
         {/* <Aicon inline href="https://medium.com/@shahamfarooq">
@@ -108,6 +115,11 @@ const SiteHeader = () => (
         <Aicon inline href="https://www.instagram.com/randomscraphs/">
           <FaEdit /><AiconLabel>Scraphs</AiconLabel>
         </Aicon>
+
+        <Aicon inline href="#footer">
+      <FaUserSecret /><AiconLabel>About</AiconLabel>
+        </Aicon>
+
     </Nav>
   </Header>
 );

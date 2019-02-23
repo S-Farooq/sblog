@@ -5,7 +5,7 @@ module.exports = {
     image: "/images/profilepic.jpeg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@shahamfarooq",
     author: 'Shaham Farooq',
-    title: "Shaham's Blog",
+    title: "Shaham's Stuff",
     siteUrl: 'https://shaham.ca',
     description: "Writings on thinking, reading, and creativity for the amateur. + Data Science.",
     owner: 'Shaham Farooq',

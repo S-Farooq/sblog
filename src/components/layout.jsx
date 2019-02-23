@@ -173,14 +173,17 @@ const Layout = ({ children }) => (
             <meta name="HandheldFriendly" content="True" />
             <meta name="description" content={site.description} />
           </Helmet>
+          <section id='header'>
           <Header />
+          </section>
           <div class='content'>
           
           {children}
           </div>
-          
+          <section id='footer'>
           <AboutFooter />
           <Footer />
+          </section>
         </main>
       )}
     </StaticQuery>
