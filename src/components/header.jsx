@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import styled from '@emotion/styled';
-import { Link, A, Aicon, AiconLink } from './header-footer-anchor';
+import { Link, A, Aicon, AiconLink, AiconLabel } from './header-footer-anchor';
 import { FaTwitterSquare, FaMedium, FaLinkedin, 
   FaHeadphonesAlt,FaGithubSquare,FaEdit, FaFolder,FaBookOpen } from 'react-icons/fa';
 
@@ -67,19 +67,7 @@ const Nav = styled.nav(({ theme }) => ({
 }));
 
 
-const AiconLabel = styled.span(({ theme }) => ({
-  fontSize: '30%',
-  margin:0,
-  padding:0,
-  display:'block',
-  // verticalAlign:'middle',
-  // lineHeight:0,
-  // position:'relative',
-  // top:'-3.7em',
-  // [theme.smallMedia]: {
-  //   top:'-0.8em',
-  // },
-}));
+
 
 
 const SiteHeader = () => (

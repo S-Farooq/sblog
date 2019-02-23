@@ -11,6 +11,8 @@ import removeTags from '../util/removeTags';
 import getPreviewHtml from '../util/getPreviewHtml';
 import prune from 'underscore.string/prune';
 import Img from "gatsby-image";
+import { AiconLink, AiconLabel } from './header-footer-anchor';
+import { FaBars, FaImages } from 'react-icons/fa';
 
 const groupPosts = posts => groupBy(posts, p => 
   (
@@ -135,14 +137,80 @@ const TextPreview = styled.div(({ theme }) => ({
   },
 }));
 
+const TopView = styled.div(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  marginBottom:10,
 
-const MAX_TEXT_PREVIEW = 550;
+  // display: 'flex',
+  // justifyContent: 'flex-end',
+  // '> a' : {
+  //   marginRight:15,
+  // },
+}));
 
-const Posts = ({ posts }) => {
-  const grouped = groupPosts(posts);
+const QuickViewDiv = styled.div(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'flex-end',
+  alignItems:'center',
+  '> a' : {
+    marginRight:15,
+    alignText: 'center',
+    // verticalAlign:'middle',
+    lineHeight:1,
+  },
+}));
+
+const QuickViewLink = styled(GatsbyLink)(({ theme }) => ({
+  textDecoration: 'none',
+  color: theme.datetimeColor,
+  fontSize: '40px',
+  transition: 'color 100ms linear',
+  ':hover': {
+    color: theme.accentColor,
+  },
+}));
+
+
+
+class Posts extends React.Component {
+
+  state = { quickView: 'block', imgShow: 'block' }
+
+  toggleMenu = (event) => {
+  event.preventDefault();
+  this.setState({
+    quickView: (this.state.quickView=='block' ? 'none':'block')
+  })
+  }
+
+  togglePics = (event) => {
+    event.preventDefault();
+    this.setState({
+      imgShow: (this.state.imgShow=='block' ? 'none':'block')
+    })
+    }
+
+  render() {
+		// const quickViewActive = this.state.quickView ? 'is-active' : '';
+    const { posts, title } = this.props;
+    const grouped = groupPosts(posts);
   const years = Object.keys(grouped).sort().reverse();
   return (
     <section>
+      <TopView>
+        <h2>{title}</h2>
+        <QuickViewDiv>
+          <QuickViewLink onClick={this.togglePics}>
+          <FaImages /><AiconLabel>Toggle</AiconLabel><AiconLabel>Images</AiconLabel>
+          </QuickViewLink>
+          <QuickViewLink  onClick={this.toggleMenu}>
+          <FaBars /><AiconLabel>Toggle</AiconLabel>
+          <AiconLabel>Preview</AiconLabel>
+          </QuickViewLink>
+        </QuickViewDiv>
+      </TopView>
       {years.map(year => (
         <section key={year}>
           {/* <H3>{year}</H3> */}
@@ -158,17 +226,21 @@ const Posts = ({ posts }) => {
                   {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
                 </Time>
               </Header>
-              {post.frontmatter.featuredImage ? <CoverImage>
+              {post.frontmatter.featuredImage ? <CoverImage 
+              style={{display: this.state.imgShow}}
+              >
               {/* <GatsbyLink to={post.frontmatter.path}> */}
                   <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
               {/* </GatsbyLink> */}
               </CoverImage>: '' }
-              <TextPreview
+              <TextPreview style={{display: this.state.quickView}}
               dangerouslySetInnerHTML={{ __html: getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum) }} />
               
+              <div style={{display: this.state.quickView}}>
               {post.frontmatter.readmore ? 
                 <ReadLinkA inline href={post.frontmatter.readmore}>Read More...</ReadLinkA> : 
               <ReadLink to={post.frontmatter.path}>Read More...</ReadLink> }
+              </div>
               <footer style={{marginTop:"10px"}}>
                 <TagsList tags={post.frontmatter.tags} />
               </footer>
@@ -178,7 +250,51 @@ const Posts = ({ posts }) => {
       ))}
     </section>
   );
+  };
 };
+
+// const Posts = ({ posts }) => {
+//   const grouped = groupPosts(posts);
+//   const years = Object.keys(grouped).sort().reverse();
+//   return (
+//     <section>
+//       <btn>Quick View</btn>
+//       {years.map(year => (
+//         <section key={year}>
+//           {/* <H3>{year}</H3> */}
+//           {grouped[year].map(post => (
+//             <Article key={post.frontmatter.path}>
+//               <Header>
+//                 <H4>
+//                   <Link to={post.frontmatter.path}>
+//                     {post.frontmatter.title}
+//                   </Link>
+//                 </H4>
+//                 <Time dateTime={dateformat(post.frontmatter.date, 'isoDateTime')}>
+//                   {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
+//                 </Time>
+//               </Header>
+//               {post.frontmatter.featuredImage ? <CoverImage>
+//               {/* <GatsbyLink to={post.frontmatter.path}> */}
+//                   <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
+//               {/* </GatsbyLink> */}
+//               </CoverImage>: '' }
+//               <TextPreview
+//               dangerouslySetInnerHTML={{ __html: getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum) }} />
+              
+//               {post.frontmatter.readmore ? 
+//                 <ReadLinkA inline href={post.frontmatter.readmore}>Read More...</ReadLinkA> : 
+//               <ReadLink to={post.frontmatter.path}>Read More...</ReadLink> }
+//               <footer style={{marginTop:"10px"}}>
+//                 <TagsList tags={post.frontmatter.tags} />
+//               </footer>
+//             </Article>
+//           ))}
+//         </section>
+//       ))}
+//     </section>
+//   );
+// };
 
 Posts.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.shape({
@@ -192,6 +308,7 @@ Posts.propTypes = {
       }).isRequired,
     }),
   })).isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Posts;
