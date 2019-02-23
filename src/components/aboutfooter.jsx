@@ -92,7 +92,7 @@ const SiteFooter = () => (
         <H3>Shaham Farooq</H3>
           <H4>Data Scientist - Toronto</H4> 
           <P>
-            Writes on thinking, reading, and creativity for the <i>amateur</i> (*from the Latin <i>amare</i> which means <i>to love</i>).
+            Writes on thinking, reading, and creativity for the <i>amateur</i> (*from the Latin <i>amare</i> which means <i>to love</i>)  + Data Science.
             </P>
             <GatsbyLink to="/"><H4 style={{opacity:0.8}}>Return to Blog</H4></GatsbyLink>
           </small>

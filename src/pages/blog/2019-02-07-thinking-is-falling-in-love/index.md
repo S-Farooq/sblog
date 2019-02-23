@@ -4,7 +4,8 @@ date: "2019-02-07"
 path: /thinking-is-love
 tags: thinking, philosophy, how-to-think
 layout: post
-foldnum: 3
+foldnum: 2
+featuredImage: "./coverscraph.jpg"
 ---
 
 I often find myself thinking about 'what I think about' and the irregular periods of intense engagement versus a general indifference associated with any given topic. I've tried to mentally model this dynamics in various ways (sinusoidal - maybe its just an up and down kind of thing?, diffusion - do I gradually bleed out from one idea to another?) but have never quite been able to put a finger on it. There are too many irregularities, too uneven of intervals between one engagement versus another.

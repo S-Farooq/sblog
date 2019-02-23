@@ -7,7 +7,7 @@ module.exports = {
     author: 'Shaham Farooq',
     title: "Shaham's Blog",
     siteUrl: 'https://blog.shaham.me',
-    description: "Writings on thinking, reading, and creativity for the amateur.",
+    description: "Writings on thinking, reading, and creativity for the amateur. + Data Science.",
     owner: 'Shaham Farooq',
     facebookAppID: '',
   },
@@ -81,7 +81,7 @@ module.exports = {
               sort: { order: DESC, fields: [frontmatter___date] }
               filter: { 
                 frontmatter: {exclude: {ne: 1} }, 
-                fileAbsolutePath: {regex: "/(blog)/.*[.]md$/"}
+                fileAbsolutePath: {regex: "/([/]blog)/.*[.]md$/"}
                 }
             ) {
               edges {
