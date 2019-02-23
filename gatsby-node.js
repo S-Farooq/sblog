@@ -45,27 +45,13 @@ async function generateContent(createPage, graphqlResults) {
   }
 
   const blogPostTemplate = path.resolve('src/templates/blog-post.jsx');
-
+ 
   const posts = graphqlResults.data.allMarkdownRemark.edges;
   const blogPosts = posts.filter(post => {  if (post.node.fileAbsolutePath.includes("/blog/")) return post; });
   const projectPosts = posts.filter(post => {  if (post.node.fileAbsolutePath.includes("/projects/")) return post; });
   
 
   createTagPages(createPage, posts);
-
-  // posts.forEach(({ node }, index) => {
-  //   const prev = index === posts.length - 1 ? false : posts[index + 1].node;
-  //   const next = index === 0 ? false : posts[index - 1].node;
-  //   createPage({
-  //     path: node.frontmatter.path,
-  //     component: blogPostTemplate,
-  //     context: {
-  //       refPath: node.frontmatter.path,
-  //       prev: prev && pick(prev, ['frontmatter.title', 'frontmatter.path']),
-  //       next: next && pick(next, ['frontmatter.title', 'frontmatter.path']),
-  //     },
-  //   });
-  // });
 
   blogPosts.forEach(({ node }, index) => {
     const prev = index === blogPosts.length - 1 ? false : blogPosts[index + 1].node;
@@ -94,6 +80,20 @@ async function generateContent(createPage, graphqlResults) {
       },
     });
   });
+
+  // const notebookTemplate = path.resolve('src/templates/notebook-post.jsx');
+
+  // const notebooks = graphqlResults.data.allJupyterNotebook.edges;
+
+  // notebooks.forEach(({ node }, index) => {
+  //   createPage({
+  //     path: node.metadata.kernelspec.name,
+  //     component: notebookTemplate,
+  //     context: {
+  //       refPath: node.metadata.kernelspec.name,
+  //     },
+  //   });
+  // });
 }
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {

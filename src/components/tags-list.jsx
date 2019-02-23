@@ -7,6 +7,7 @@ const Small = styled.small({
   opacity:1.0,
   fontSize: '0.9rem',
   textAlign:'center',
+  letterSpacing: '-0.02rem',
 });
 
 const A = styled(Link)(({ theme }) => ({

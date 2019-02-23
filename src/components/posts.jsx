@@ -63,13 +63,19 @@ const CoverImage = styled.div(({ theme }) => ({
 
 }));
 
-const H4 = styled.h4({
+const H4 = styled.div(({ theme }) => ({
   margin: 0,
-  fontWeight: '600',
-});
+  letterSpacing: "-0.08rem",
+  [theme.smallMedia]: {
+    fontSize:'0.9em',
+    fontWeight: '400',
+  },
+
+}));
 
 const Time = styled.time(({ theme }) => ({
   fontSize: '0.90rem',
+  letterSpacing: "-0.04rem",
   color: theme.datetimeColor,
 }));
 
@@ -85,6 +91,7 @@ const Link = styled(GatsbyLink)(({ theme }) => ({
 
 const ReadLink = styled(GatsbyLink)(({ theme }) => ({
   textDecoration: 'none',
+  letterSpacing: '-0.05rem',
   padding: '15px',
   fontSize:'1.2rem',
   color: theme.accentColor,
@@ -217,11 +224,12 @@ class Posts extends React.Component {
           {grouped[year].map(post => (
             <Article key={post.frontmatter.path}>
               <Header>
-                <H4>
-                  <Link to={post.frontmatter.path}>
+                
+                <Link to={post.frontmatter.path}>
+                  <H4>
                     {post.frontmatter.title}
-                  </Link>
-                </H4>
+                  </H4>
+                </Link>
                 <Time dateTime={dateformat(post.frontmatter.date, 'isoDateTime')}>
                   {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
                 </Time>

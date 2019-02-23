@@ -12,6 +12,8 @@ readmore: "https://towardsdatascience.com/sample-hand-geometry-biometric-identif
 
 This post is adapted from an assignment I completed — I thought the project laid out the basic process of data modelling well and had an intuitive application making it easier for people to follow. This example highlights 6 general steps of a data analysis and discusses what kind of elements it would involve.
 
-[The complete code (a Jupyter Notebook) can be found here.](https://github.com/S-Farooq/hand-geo-A2)
+[See the notebook for details and code](https://shaham.me/hand-geo-system-code)
+
+[The complete code can be found here.](https://github.com/S-Farooq/hand-geo-A2)
 
 [Read on Medium.](https://towardsdatascience.com/sample-hand-geometry-biometric-identification-system-b122446e3fdb)

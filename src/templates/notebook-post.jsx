@@ -12,16 +12,23 @@ import TagsList from '../components/tags-list';
 import PostNav from '../components/post-nav';
 import CodeStyle from '../emotion/code';
 import pageContextShape from '../shapes/page-context';
-import postShape from '../shapes/post';
+import postShape from '../shapes/notebook';
 import getPreFoldContent from '../util/getPreFoldContent';
 import removeTags from '../util/removeTags';
 import getPreviewHtml from '../util/getPreviewHtml';
 import prune from 'underscore.string/prune';
 import { Link as GatsbyLink } from 'gatsby';
-
+import { withPrefix } from 'gatsby'
+// import jsb from '../../static/portland_unemployment'
 import SEO from '../components/SEO/SEO';
 import { HR } from '../components/header-footer-anchor';
 import Img from "gatsby-image";
+
+// try {
+//     jsb = require('../images/portland_unemployment')
+//   } catch (e) {
+//     console.log(e)
+//   }
 
 const Main = styled.main(({ theme }) => ({
   color: theme.textColor,
@@ -40,15 +47,6 @@ const Header = styled.header(({ theme }) => ({
   },
 }));
 
-const CoverImage = styled.div(({ theme }) => ({
-  margin:'0.2em',
-  [theme.largeMedia]: {
-    ...theme.centerPadding,
-    alignItems: 'center',
-    margin:'1em',
-  }
-
-}));
 
 const HeaderTitle = styled.h1(({ theme }) => ({
   width: '85%',
@@ -82,13 +80,36 @@ const PostWrap = styled.section(({ theme }) => ({
     width: '100vw',
     wordWrap: 'break-word',
     ':not(.gatsby-highlight)': {
-      ...theme.centerPadding,
+    //   ...theme.centerPadding,
+    padding: 20,
+    
+    paddingLeft:100,
+    paddingRight:100,
+    [theme.smallMedia]: {
+        padding: 10,
+        paddingLeft:10,
+        paddingRight:10,
+      },
     },
   },
+  '.sc-bwzfXH': {
+      display:'none',
+  },
+  ' img': {
+    width: '100%',
+    // height: '100%',
+    // wordWrap: 'break-word',
+    // ':not(.gatsby-highlight)': {
+    //   ...theme.centerPadding,
+    // },
+  },
+  '.sc-gzVnrw': {
+      marginTop:50,
+  },
   '> .gatsby-highlight > pre': {
-    ...theme.centerPadding,
-    paddingTop: theme.spacing,
-    paddingBottom: theme.spacing,
+    // ...theme.centerPadding,
+    // paddingTop: theme.spacing,
+    // paddingBottom: theme.spacing,
   },
   '>ul,>ol': {
     marginLeft: `${theme.spacingPx * 4}px`,
@@ -110,32 +131,58 @@ const PostNavWrap = styled.div(({ theme }) => ({
 }));
 
 
-const BlogPost = ({ data, pageContext }) => {
-  const { markdownRemark: post } = data;
-  const { title, siteUrl } = data.site.siteMetadata;
-  const { next, prev } = pageContext;
+class NotebookPost extends React.Component {
 
-  const isProduction = process.env.NODE_ENV === 'production';
-  const fullUrl = `${siteUrl}${post.frontmatter.path}`;
-  const cardImage = post.frontmatter.cardImage ?
-        post.frontmatter.cardImage: post.frontmatter.featuredImage
-        
+
+    componentDidMount () {
+        const tripadvisorLeft = document.createElement("script");
+        tripadvisorLeft.id = "10b8081a-1350-4b67-9e70-ef14e10d59e3";
+        tripadvisorLeft.async = true;
+        document.getElementById('bokehmap').appendChild(tripadvisorLeft);
+        require('../images/portland_unemployment');
+        // this.setState({
+        //     mounted: !this.state.mounted
+        //   })
+    }
+
+    togglePics = (event) => {
+        event.preventDefault();
+        window.location.reload();
+        }
+
+    
+
+  
+    render() {
+        const { data, pageContext } = this.props;
+  const { jupyterNotebook: post } = data;
+
+//   require('../images/portland_unemployment');
+
+  const { title, siteUrl } = data.site.siteMetadata;
+//   const { next, prev } = pageContext;
+
+//   const isProduction = process.env.NODE_ENV === 'production';
+//   const fullUrl = `${siteUrl}${post.frontmatter.path}`;
+//   const cardImage = post.frontmatter.cardImage ?
+//         post.frontmatter.cardImage: post.frontmatter.featuredImage
+    // const jssrc = withPrefix('portland_unemployment.js');
   return (
     <Layout>
       <CodeStyle />
       <Main>
-        <SEO
+        {/* <SEO
           title={post.frontmatter.title}
           image={cardImage ?
             cardImage.childImageSharp.sizes.src: '' }
           description={post.frontmatter.description || removeTags(getPreviewHtml(post.html,'</p>',post.frontmatter.foldnum > 2 ? 2: post.frontmatter.foldnum)) || 'nothin’'}
           pathname={fullUrl}
           article
-        />
-        
+        /> */}
         <article>
-          
-          <Header>
+            {/* <a onClick={this.togglePics}>ref</a> */}
+        
+          {/* <Header>
             <HeaderTitle>
               {post.frontmatter.title}
             </HeaderTitle>
@@ -148,9 +195,9 @@ const BlogPost = ({ data, pageContext }) => {
           
           {post.frontmatter.featuredImage ? <CoverImage>
             <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
-            </CoverImage>: '' }
-
-          
+            </CoverImage>: '' } */}
+    
+ <PostWrap id ="bokehmap"></PostWrap>
           <PostWrap dangerouslySetInnerHTML={{ __html: post.html }} />
           {/*<Footer>
             {isProduction && (
@@ -164,61 +211,57 @@ const BlogPost = ({ data, pageContext }) => {
           </Footer>*/}
           
         </article>
-        <PostNavWrap>
+        {/* <PostNavWrap>
         
           <PostNav prev post={prev} />
           <PostNav next post={next} />
-        </PostNavWrap>
+        </PostNavWrap> */}
       </Main>
     </Layout>
   );
 };
+};
 
-BlogPost.propTypes = {
+NotebookPost.propTypes = {
   data: PropTypes.shape({
     site,
-    markdownRemark: postShape,
+    jupyterNotebook: postShape,
   }).isRequired,
   pageContext: pageContextShape.isRequired,
 };
 
-export default BlogPost;
+export default NotebookPost;
 
 export const query = graphql`
-  query BlogPostByPath($refPath: String!) {
+  query NotebookPostByPath($refPath: String!) {
     site {
       siteMetadata {
         title
         siteUrl
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $refPath } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        tags
-        foldnum
-        title
-        description
-        cardImage {
-          childImageSharp{
-            sizes(maxWidth: 750) {
-                ...GatsbyImageSharpSizes
+    jupyterNotebook(metadata: {kernelspec: {name: { eq: $refPath }} }) {
+        id
+        metadata {
+            kernelspec {
+                name
+                language
+                display_name
             }
-          }
         }
-        featuredImage {
-                childImageSharp{
-                    sizes(maxWidth: 750) {
-                        ...GatsbyImageSharpSizes
-                    }
-                    fluid(maxWidth: 750) {
-                      ...GatsbyImageSharpFluid
-                    }
-                }
+        html
+        json {
+            nbformat
+            nbformat_minor
+            cells {
+                cell_type
+                execution_count
             }
-      }
+        }
+        internal {
+            content
+        }
     }
+      
   }
 `;
