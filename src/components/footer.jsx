@@ -40,6 +40,10 @@ const SiteFooter = () => (
           <FaLinkedin />
         </A>
 
+        <A inline href="https://github.com/S-Farooq">
+          <FaGithubSquare />
+        </A>
+
         <A inline href="https://www.instagram.com/shahamfarooq/">
           <FaInstagram />
         </A>
