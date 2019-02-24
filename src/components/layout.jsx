@@ -26,7 +26,7 @@ import AboutFooter from './aboutfooter';
 const minWidthPx = 550;
 const maxWidthPx = 750;
 const spacingPx = 20;
-const centerPadding = `calc((100vw - ${maxWidthPx - (6 * spacingPx)}px) / 2)`;
+const centerPadding = `calc((100vw - ${maxWidthPx - (0 * spacingPx)}px) / 2)`;
 const smallMedia = `@media(max-width: ${minWidthPx}px)`;
 const largeMedia = `@media(min-width: ${maxWidthPx}px)`;
 const textColor = '#333';
