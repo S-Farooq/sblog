@@ -75,8 +75,8 @@ const Layout = ({ children }) => (
           height: '100vh',
           margin: 0,
           padding: 0,
-          fontFamily: 'Lato',
-          fontSize:'1.1rem',
+          fontFamily: 'Athelas',
+          fontSize:'1.05rem',
           fontWeight:'300',
         },
         'p':{
