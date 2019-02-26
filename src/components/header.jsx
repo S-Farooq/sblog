@@ -100,9 +100,9 @@ const SiteHeader = () => (
       <FaFolder /><AiconLabel>Projects</AiconLabel>
         </Aicon> */}
 
-      <Aicon inline href="https://twitter.com/randomscraphs">
+      {/* <Aicon inline href="https://twitter.com/randomscraphs">
       <FaTwitterSquare /><AiconLabel>Subscribe</AiconLabel>
-        </Aicon>
+        </Aicon> */}
 
         {/* <Aicon inline href="https://medium.com/@shahamfarooq">
           <FaMedium /><AiconLabel>Medium</AiconLabel>
