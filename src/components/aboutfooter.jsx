@@ -90,7 +90,8 @@ const SiteFooter = () => (
         <H3>Shaham Farooq</H3>
           <H4>Data Scientist - Toronto</H4> 
           <P>
-            Writes on thinking, reading, and creativity for the <i>amateur</i> (*from the Latin <i>amare</i> which means <i>to love</i>)  + Data Science.
+            Writes on thinking, reading, and creativity for the <i>amateur</i> (*from the Latin <i>amare</i> which means <i>to love</i>)..
+            most of the time. Sometimes, writes about data science, sometimes about something else.
             </P>
             <Aicon2 inline href="#header"><H4 style={{opacity:1.0}}>Return to Top</H4></Aicon2>
           </small>
