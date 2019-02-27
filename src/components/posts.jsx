@@ -57,10 +57,21 @@ const CoverImage = styled.div(({ theme }) => ({
   alignItems: 'center',
   [theme.smallMedia]: {
     margin: '0px',
+    padding:0,
     marginTop: '10px',
     marginBottom: '10px',
   },
+  
 
+}));
+
+const Image = styled(Img)(({ theme }) => ({
+  border: "0.1rem solid #333",
+  // [theme.smallMedia]: {
+  //   border:0,
+  //   borderTop: "0.1rem solid #333",
+  //   borderBottom: "0.1rem solid #333",
+  // },
 }));
 
 const H4 = styled.div(({ theme }) => ({
@@ -127,21 +138,33 @@ const TextPreview = styled.div(({ theme }) => ({
   paddingLeft:'40px',
   paddingRight:'40px',
   [theme.smallMedia]: {
-    padding: '0px',
+    padding: '0px 5px 0px 5px',
   },
-  opacity:1.0,
+  opacity:0.95,
   color: theme.textColor,
   '>p': {
     fontSize:'1.1rem',
     lineHeight: '1.6rem',
   },
-  'blockquote > p': {
-    margin:0,
-    paddingLeft:0,
-    paddingRight:0,
-    fontSize:'1.0rem',
-    lineHeight: '1.4rem',
+  '> blockquote': {
+    paddingLeft: 0,
+    paddingRight: 0,
   },
+  'blockquote > p': {
+    fontFamily: 'Roboto, serif',
+    margin:0,
+    // paddingLeft:0,
+    // paddingRight:0,
+    borderLeft: `0.2em #ffce7f solid`,
+    borderRadius: '0.2em',
+
+    paddingTop:'0.5em',
+    paddingBottom:'0.5em',
+    paddingLeft:'1.5em',
+    fontSize:'1.1rem',
+    lineHeight: '1.6rem',
+  },
+
 }));
 
 const TopView = styled.div(({ theme }) => ({
@@ -234,11 +257,14 @@ class Posts extends React.Component {
                   {dateformat(post.frontmatter.date, 'mmmm d, yyyy')}
                 </Time>
               </Header>
+              <footer style={{marginTop:"10px"}}>
+                <TagsList tags={post.frontmatter.tags} />
+              </footer>
               {post.frontmatter.featuredImage ? <CoverImage 
               style={{display: this.state.imgShow}}
               >
               {/* <GatsbyLink to={post.frontmatter.path}> */}
-                  <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
+                  <Image fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
               {/* </GatsbyLink> */}
               </CoverImage>: '' }
               <TextPreview style={{display: this.state.quickView}}
@@ -247,11 +273,9 @@ class Posts extends React.Component {
               <div style={{display: this.state.quickView}}>
               {post.frontmatter.readmore ? 
                 <ReadLinkA inline href={post.frontmatter.readmore}>Read More...</ReadLinkA> : 
-              <ReadLink to={post.frontmatter.path}>Read More...</ReadLink> }
+              <ReadLink to={post.frontmatter.path}>Read More &rarr;</ReadLink> }
               </div>
-              <footer style={{marginTop:"10px"}}>
-                <TagsList tags={post.frontmatter.tags} />
-              </footer>
+              
             </Article>
           ))}
         </section>

@@ -17,10 +17,10 @@ export const LinkIcon = styled(GatsbyLink)(({ theme }) => ({
   textAlign:'center',
   verticalAlign:'center',
   [theme.largeMedia]: {
-    fontSize: '40px',
+    fontSize: '45px',
   },
   [theme.smallMedia]: {
-    fontSize: '25px',
+    fontSize: '35px',
   },
   transition: 'color 100ms linear',
   ':hover': {
@@ -55,6 +55,7 @@ export const HR = styled.div(({ theme }) => ({
 
 export const AiconLabel = styled.span(({ theme }) => ({
   fontSize: '30%',
+  letterSpacing:'-0.02em',
   margin:0,
   padding:0,
   display:'block',

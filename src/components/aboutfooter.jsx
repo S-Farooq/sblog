@@ -39,7 +39,7 @@ const profilediv = {
 const P = styled.p(({ theme }) => ({
   // margin: `${theme.spacingPx / 2}px 0`,
   opacity: 0.85,
-  fontSize:"1.0em",
+  fontSize:"1.1em",
   lineHeight: '1.0em',
   margin:0,
   padding:0,
