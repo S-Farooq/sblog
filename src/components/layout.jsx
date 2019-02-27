@@ -75,6 +75,7 @@ const Layout = ({ children }) => (
           height: '100vh',
           margin: 0,
           padding: 0,
+          // fontFamily: 'Athelas, "Times New Roman", serif',
           fontFamily: 'Athelas',
           fontSize:'1.05rem',
           fontWeight:'300',
@@ -103,9 +104,12 @@ const Layout = ({ children }) => (
           // textTransform: 'uppercase',
           // marginBottom: 0,
         },
+        'strong': {
+          fontWeight:'bold',
+        },
         a: {
           textDecoration: 'none',
-          fontWeight: '400',
+          fontWeight:'400',
           color: accentColor,
           transition: 'color 100ms linear',
           ':hover': {
@@ -114,11 +118,12 @@ const Layout = ({ children }) => (
         },
         
         blockquote: {
-          fontFamily: 'Lato',
+          // fontFamily: 'Athelas',
+          // opacity:0.9,
           // background: '#F9F9F9',
           // background: 'rgba(39, 38, 34)',
           // background: 'rgba(39, 38, 34, .05)',
-          background: '#f9f9f9',
+          background: '#fcfcfc',
           padding: `${spacingPx * 1}px`,
           margin: 0,
           
@@ -131,16 +136,13 @@ const Layout = ({ children }) => (
             paddingRight: `${spacingPx * 1}px`,
           },
           
-          fontSize:'1.1rem',
+          // fontSize:'1.2rem',
         },
         '.content': {
         [theme.largeMedia]: {
             paddingTop:theme.contentTopPadding,
           },
         },
-        '.gatsby-resp-image-image': {
-          border: "0.1em solid #333",
-        }
 
           
       }}

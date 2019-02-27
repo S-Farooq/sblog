@@ -41,13 +41,17 @@ const Header = styled.header(({ theme }) => ({
 }));
 
 const CoverImage = styled.div(({ theme }) => ({
-  margin:'0.2em',
+  // margin:'0.2em',
   [theme.largeMedia]: {
     ...theme.centerPadding,
     alignItems: 'center',
     margin:'1em',
   }
 
+}));
+
+const Image = styled(Img)(({ theme }) => ({
+  border: "0.1rem solid #333",
 }));
 
 const HeaderTitle = styled.h1(({ theme }) => ({
@@ -78,6 +82,9 @@ const PostWrap = styled.section(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  'h2,h3,h4' : {
+    marginBottom:'0.1em',
+  },
   '> *': {
     width: '100vw',
     wordWrap: 'break-word',
@@ -85,11 +92,50 @@ const PostWrap = styled.section(({ theme }) => ({
       ...theme.centerPadding,
     },
   },
-  '> .gatsby-highlight > pre': {
-    ...theme.centerPadding,
-    paddingTop: theme.spacing,
-    paddingBottom: theme.spacing,
+  '.gatsby-resp-image-link' : {
+    'img': {
+      border: "0.1em solid #333",
+    },
+    
   },
+
+  blockquote: {
+    opacity:'0.85',
+    fontFamily: 'Roboto, serif',
+    
+    '> p': {
+      borderLeft: `0.2em #ffce7f solid`,
+      borderRadius: '0.2em',
+
+      paddingTop:'0.5em',
+      paddingBottom:'0.5em',
+      paddingLeft:'1.5em',
+    //   ':before' :{
+    //     content: "open-quote",
+    //     position: 'absolute',
+    //     left: '2.5em',
+    //     // left: '40px',
+    //     // top:'10px',
+    //     color: '#ffce7f',
+    //     fontSize:'4em',
+    //     [theme.smallMedia]: {
+    //       position: 'absolute',
+    //       left: '40px',
+    //     // top:'10px',
+    //     },
+    //  },
+    },
+    
+
+
+
+  },
+
+  // '> .gatsby-highlight > pre': {
+  //   ...theme.centerPadding,
+  //   paddingTop: theme.spacing,
+  //   paddingBottom: theme.spacing,
+  // },
   '>ul,>ol': {
     marginLeft: `${theme.spacingPx * 4}px`,
     width: `calc(100% - ${theme.spacingPx * 4}px)`,
@@ -147,7 +193,7 @@ const BlogPost = ({ data, pageContext }) => {
           </Header>
           
           {post.frontmatter.featuredImage ? <CoverImage>
-            <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} style={{border: "0.1rem solid #333"}} />
+            <Image fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
             </CoverImage>: '' }
 
           
