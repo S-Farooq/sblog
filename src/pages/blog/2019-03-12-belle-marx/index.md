@@ -48,7 +48,7 @@ Crudely put, *true* readers want to read and he wants *true* readers that would 
 
 > “If neurotic is wanting two mutually exclusive things at one and the same time, then I'm neurotic as hell. I'll be flying back and forth between one mutually exclusive thing and another for the rest of my days.” - Sylvia Plath
 
-The comic below by Tom Gould is a *perfect* illustration of our protagonist's ideals (that are inevitably betrayed because, as it turns out, some people really *mean* it when they say "I am a Marxist").
+The [comic below by Tom Gauld](https://www.amazon.ca/Baking-Kafka-Tom-Gauld/dp/1770462961) is a *perfect* illustration of our protagonist's ideals (that are inevitably betrayed because, as it turns out, some people really *mean* it when they say "I am a Marxist").
 
 ![](./cover.jpg)
 
