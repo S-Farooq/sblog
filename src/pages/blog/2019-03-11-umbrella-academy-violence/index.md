@@ -1,5 +1,5 @@
 ---
-title: "Umbrella Academy as Slavoj Zizek's Violence"
+title: "The Umbrella Academy as Slavoj Zizek's Violence"
 date: "2019-03-11"
 path: /umbrella-academy-violence
 tags: capitalism, zizek, analysis, umbrella-academy, lit-theory
@@ -9,27 +9,14 @@ description: "The Commission is basically a caricature (maybe even without the '
 featuredImage: "./cover.jpg"
 ---
 
-> # Warning! Full of Spoilers.
+**Basic Relations to Keep in Mind** : <br>(format: *In Umbrella Academy = In Violence by Zizek*)
 
-## TLDR; Summary (of why The Umbrella Academy is a commentary on Zizek's Violence)
-
-### **Definitions** (format: *In Umbrella Academy = In Violence by Zizek*)
 > * The Commission = Objective Violence<br><br>
 > * Number Five (+ Umbrella Academy except Vanya) = Liberal Communists, brutal humanitarians (+ variants)<br><br>
 > * Vanya = Subjective Violence<br><br>
-> * 'The Way Things are Meant To Be'  (the Correct Historical Course) = Capitalism
+> * 'The Way Things are Meant To Be' (*Correct Historical Course*) = Current socio-economic order (Liberalism-Capitalism)
 
-### **Events** (format: *In Umbrella Academy = In Violence by Zizek*)
-
-> The Commission actively works to ensure the correct historical course <br>=<br> Objective Violence systematically sustains Capitalism
-
-> Umbrella Academy's obsession with urgently saving the world causes the apocalypse <br>=<br> Our 'We do not have time to *think*, we must Do!' injunction of humanism will cause capitalist dystopia
-
-> Umbrella Academy's obsession with Vanya causes them to overlook The Commission's ulterior plot <br>=<br> Obsession with Subjective Violence causes us to overlook Objective Violence's systematic effect
-
-> The correct historical course (i.e. the apocalypse) is ensured by The Commission, paradoxically, through facilitating Number Five's attempt to stop the apocalypse <br>=<br> Status quo of the socio-economic order (liberal-capitalism) is ensured by Objective Violence, paradoxically, through facilitating the mitigation of its negative effects. (i.e. billionaire philanthropists)
-
-> Number Five + Umbrella Academy as superheroes, finding purpose in their attempt to save the average people of humanity,  actually cause the apocalypse - while being the only one that can escape from it <br>=<br> Rich *'Liberal Communists'* (ex. billionaire philanthropists), finding purpose in their attempts to save the average people of humanity, further the current socio-economic system that causes disaster (ecological, poverty, war, etc.) - while being the only ones that can escape from it (via organic foods, shelters, peaceful gated communities)
+**Warning! This post is full of spoilers.**
 
 # Groundwork - Who is **The Commission** and what is Objective Violence?
 
@@ -134,3 +121,17 @@ What was the solution? To Zizek, it would be to do 'nothing'. Nothing in the sen
 Had Luther, in that warm moment when he hugged **Vanya**, left it only at a hug and ignored the impulse of saving the world - perhaps that would have been the only true radical position in the entire show. It would be a moment where someone used their Freewill to its potential instead of acting as expected out of a saviour duty. But, as expected, metaphorical of a 'brutal humanitarian', his 'hug' is only an excuse to capture her - he tighten until she loses consciousness and then locks **Vanya** in isolation. Even with all the powers in the world, they were too stupid to realize [that had a hug remained a hug](http://www.critical-theory.com/zizek-likes-cuddling-the-art-of-leninist-hugging/), the apocalypse could have been prevented.
 
 > **"To hug each other and… Yes, that’s serious Leninist work." - Zizek**
+
+# Summary (of why The Umbrella Academy is a commentary on Zizek's Violence)
+
+(format: *In Umbrella Academy = In Violence by Zizek*)
+
+> The Commission actively works to ensure the correct historical course <br>=<br> Objective Violence systematically sustains Capitalism
+
+> Umbrella Academy's obsession with urgently saving the world causes the apocalypse <br>=<br> Our 'We do not have time to *think*, we must Do!' injunction of humanism will cause capitalist dystopia
+
+> Umbrella Academy's obsession with Vanya causes them to overlook The Commission's ulterior plot <br>=<br> Obsession with Subjective Violence causes us to overlook Objective Violence's systematic effect
+
+> The correct historical course (i.e. the apocalypse) is ensured by The Commission, paradoxically, through facilitating Number Five's attempt to stop the apocalypse <br>=<br> Status quo of the socio-economic order (liberal-capitalism) is ensured by Objective Violence, paradoxically, through facilitating the mitigation of its negative effects. (i.e. billionaire philanthropists)
+
+> Number Five + Umbrella Academy as superheroes, finding purpose in their attempt to save the average people of humanity,  actually cause the apocalypse - while being the only one that can escape from it <br>=<br> Rich *'Liberal Communists'* (ex. billionaire philanthropists), finding purpose in their attempts to save the average people of humanity, further the current socio-economic system that causes disaster (ecological, poverty, war, etc.) - while being the only ones that can escape from it (via organic foods, shelters, peaceful gated communities)
