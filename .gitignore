@@ -7,3 +7,4 @@ rclone.conf
 .DS_Store
 src/.DS_Store
 src/blog/.DS_Store
+*/*.DS_Store
