@@ -144,6 +144,11 @@ const PostWrap = styled.section(({ theme }) => ({
       width: `calc(100% - ${theme.spacingPx * 2}px)`,
     },
   },
+
+  '>ul >li >p': {
+    marginTop: '2px',
+    marginBottom: '2px',
+  },
 }));
 
 const PostNavWrap = styled.div(({ theme }) => ({
