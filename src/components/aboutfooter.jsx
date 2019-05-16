@@ -90,8 +90,7 @@ const SiteFooter = () => (
         <H3>Shaham Farooq</H3>
           <H4>Data Scientist - Toronto</H4> 
           <P>
-            I write about connections that interest me (generally around thinking, reading, and creativity). 
-            Here and there, I'll complete a data-science related project.
+            Genius. Have brain, will travel.
           </P>
           <Aicon2 inline href="#header"><H4 style={{opacity:1.0}}>Return to Top</H4></Aicon2>
           </small>
