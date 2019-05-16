@@ -90,7 +90,7 @@ const SiteFooter = () => (
         <H3>Shaham Farooq</H3>
           <H4>Data Scientist - Toronto</H4> 
           <P>
-            Genius. Have brain, will travel.
+            "Genius. Have brain, will travel." (- Wile E. Coyote)
           </P>
           <Aicon2 inline href="#header"><H4 style={{opacity:1.0}}>Return to Top</H4></Aicon2>
           </small>
