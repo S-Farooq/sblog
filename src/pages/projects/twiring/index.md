@@ -4,7 +4,7 @@ date: "2019-04-29"
 path: /twiring
 tags: data-science, analysis, twitter, visualization, art
 layout: post
-foldnum: 1
+foldnum: 4
 featuredImage: "./twiring.png"
 description: "Automatic topic-modelling and generation of 'wiring' drawings based on user's tweet history."
 readmore: https://towardsdatascience.com/twiring-diagrams-data-visualization-art-from-tweeting-behaviour-38601aa2b2c6
