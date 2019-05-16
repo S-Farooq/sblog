@@ -1,10 +1,10 @@
 ---
 title: "Depicting Quranic Lengths with Sentence Drawings Data Art"
 date: "2019-04-29"
-path: /twiring
+path: /quranvis
 tags: data-science, analysis, quran, visualization, art, app
 layout: post
-foldnum: 1
+foldnum: 3
 featuredImage: "./cover.png"
 description: "visually model groups of chapters in the Quran."
 readmore: https://towardsdatascience.com/depicting-quranic-lengths-with-sentence-drawings-data-art-d34413317784
