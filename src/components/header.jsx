@@ -31,15 +31,19 @@ const Header = styled.header(({ theme }) => ({
   },
   [theme.largeMedia]: {
     ...theme.centerPadding,
-    position: 'fixed',
+    // position: 'fixed',
   },
 
   zIndex: 99,
+  boxShadow: '0px 0px 3px 0px rgba(0,0,0,0.2)',
   
 }));
 
 const H1 = styled.h1(({ theme }) => ({
   fontSize: '1.25rem',
+  fontWeight:'100',
+  opacity: 1.0,
+  // textTransform: "uppercase",
   margin: 0,
   [theme.smallMedia]: {
     fontSize: '1.0rem',
@@ -47,9 +51,14 @@ const H1 = styled.h1(({ theme }) => ({
   },
 }));
 
-const Small = styled.small({
+const Small = styled.span(({ theme }) => ({
+  color: theme.accentColor,
+}));
+
+
+const Small2 = styled.span({
   fontSize: '85%',
-  opacity: 0.65,
+  opacity: 0.6,
 });
 
 const Nav = styled.nav(({ theme }) => ({
@@ -80,7 +89,7 @@ const Nav = styled.nav(({ theme }) => ({
 const SiteHeader = () => (
   <Header>
     <H1>
-      <Small>Shaham</Small>
+    <Small></Small><Small2>Shaham's</Small2>
     </H1>
     <Nav>
 
@@ -111,10 +120,10 @@ const SiteHeader = () => (
         {/* <Aicon inline href="https://www.linkedin.com/in/syed-shaham-farooq-1b851a64/">
           <FaLinkedin /><AiconLabel>Linkedin</AiconLabel>
         </Aicon> */}
-
+{/* 
         <Aicon inline href="https://www.instagram.com/randomscraphs/">
           <FaEdit /><AiconLabel>Scraphs</AiconLabel>
-        </Aicon>
+        </Aicon> */}
 
         <Aicon inline href="#footer">
       <FaUserSecret /><AiconLabel>About</AiconLabel>

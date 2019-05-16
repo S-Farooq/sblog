@@ -4,39 +4,46 @@ import styled from '@emotion/styled';
 export const Link = styled(GatsbyLink)(({ theme }) => ({
   textDecoration: 'none',
   color: theme.headerTextColor,
+  opacity: "0.5",
   transition: 'color 100ms linear',
   ':hover': {
     color: theme.accentColor,
+    opacity: 1.0,
   },
 }));
 
 export const LinkIcon = styled(GatsbyLink)(({ theme }) => ({
   textDecoration: 'none',
-  color: theme.headerTextColor,
+  // color: theme.headerTextColor,
+  opacity: 1.0,
+  color: theme.accentColor,
   // display:'inline-block',
   textAlign:'center',
   verticalAlign:'center',
   [theme.largeMedia]: {
-    fontSize: '45px',
+    fontSize: '30px',
   },
   [theme.smallMedia]: {
-    fontSize: '35px',
+    fontSize: '25px',
   },
   transition: 'color 100ms linear',
   ':hover': {
-    color: theme.accentColor,
+    color: theme.headerTextColor,
+    // opacity: 1.0,
   },
 }));
 
 export const LinkIcon2 = styled(GatsbyLink)(({ theme }) => ({
   textDecoration: 'none',
-  color: theme.headerBgColor,
+  color: theme.accentColor,
+  opacity: "0.85",
   [theme.largeMedia]: {
-    fontSize: '30px',
+    fontSize: '20px',
   },
   transition: 'color 100ms linear',
   ':hover': {
-    color: theme.accentColor,
+    color: theme.headerTextColor,
+    opacity: 1.0,
   },
 }));
 
