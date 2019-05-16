@@ -98,13 +98,18 @@ const PostWrap = styled.section(({ theme }) => ({
     },
     
   },
+  a: {
+    ':hover': {
+      textDecoration: "underline",
+    },
+  },
 
   blockquote: {
     opacity:'0.85',
-    fontFamily: 'Roboto, serif',
+    // fontFamily: 'Roboto, serif',
     
     '> p': {
-      borderLeft: `0.2em #ffce7f solid`,
+      borderLeft: `0.2em #0b7a7a solid`,
       borderRadius: '0.2em',
 
       paddingTop:'0.5em',

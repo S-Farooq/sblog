@@ -12,6 +12,6 @@ readmore: https://s-farooq.github.io/musicmap
 
 Mapping Music based on their audio to study album flows and create your own mixtape.
 
-[See Web App](https://s-farooq.github.io/musicmap)
+[See Web App](https://s-farooq.github.io/musicmap.html)
 
 [Read on Medium.](https://towardsdatascience.com/the-art-of-creating-a-mixtape-a-data-science-approach-1902065b1d1d)

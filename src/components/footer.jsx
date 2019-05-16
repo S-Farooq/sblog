@@ -8,7 +8,7 @@ import { FaTwitterSquare, FaMedium, FaLinkedin, FaInstagram,
 
 const Footer = styled.footer(({ theme }) => ({
   backgroundColor: theme.footerBgColor,
-  color: theme.headerTextColor,
+  // color: theme.headerTextColor,
   height: '${theme.headerHeight / 2}',
   textAlign: 'center',
   opacity: 1.0,

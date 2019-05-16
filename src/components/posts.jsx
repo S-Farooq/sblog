@@ -84,6 +84,15 @@ const H4 = styled.div(({ theme }) => ({
 
 }));
 
+const TitleHeader = styled.p(({ theme }) => ({
+  color: theme.accentColor,
+  fontWeight:100,
+  letterSpacing: "-0.08rem",
+  display: 'flex',
+  justifyContent: 'flex-end',
+
+}));
+
 const Time = styled.time(({ theme }) => ({
   fontSize: '0.90rem',
   letterSpacing: "-0.04rem",
@@ -92,11 +101,12 @@ const Time = styled.time(({ theme }) => ({
 
 const Link = styled(GatsbyLink)(({ theme }) => ({
   textDecoration: 'none',
-  fontSize:'1.8rem',
+  fontSize:'1.5rem',
   color: theme.textColor,
   transition: 'color 100ms linear',
   ':hover': {
-    color: theme.accentColor,
+    color: theme.textColor,
+    textDecoration: "underline",
   },
 }));
 
@@ -140,7 +150,7 @@ const TextPreview = styled.div(({ theme }) => ({
   [theme.smallMedia]: {
     padding: '0px 5px 0px 5px',
   },
-  opacity:0.95,
+  opacity:0.7,
   color: theme.textColor,
   '>p': {
     fontSize:'1.1rem',
@@ -151,11 +161,11 @@ const TextPreview = styled.div(({ theme }) => ({
     paddingRight: 0,
   },
   'blockquote > p': {
-    fontFamily: 'Roboto, serif',
+    // fontFamily: 'Roboto, serif',
     margin:0,
     // paddingLeft:0,
     // paddingRight:0,
-    borderLeft: `0.2em #ffce7f solid`,
+    borderLeft: `0.2em #0b7a7a solid`,
     borderRadius: '0.2em',
 
     paddingTop:'0.5em',
@@ -171,7 +181,7 @@ const TopView = styled.div(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
-  marginBottom:10,
+  marginBottom:0,
 
   // display: 'flex',
   // justifyContent: 'flex-end',
@@ -181,6 +191,7 @@ const TopView = styled.div(({ theme }) => ({
 }));
 
 const QuickViewDiv = styled.div(({ theme }) => ({
+  opacity:0.8,
   display: 'flex',
   justifyContent: 'flex-end',
   alignItems:'center',
@@ -195,7 +206,7 @@ const QuickViewDiv = styled.div(({ theme }) => ({
 const QuickViewLink = styled(GatsbyLink)(({ theme }) => ({
   textDecoration: 'none',
   color: theme.datetimeColor,
-  fontSize: '40px',
+  fontSize: '30px',
   transition: 'color 100ms linear',
   ':hover': {
     color: theme.accentColor,
@@ -206,7 +217,7 @@ const QuickViewLink = styled(GatsbyLink)(({ theme }) => ({
 
 class Posts extends React.Component {
 
-  state = { quickView: 'block', imgShow: 'block' }
+  state = { quickView: 'none', imgShow: 'none' }
 
   toggleMenu = (event) => {
   event.preventDefault();
@@ -230,7 +241,7 @@ class Posts extends React.Component {
   return (
     <section>
       <TopView>
-        <h2>{title}</h2>
+        <TitleHeader>{title}</TitleHeader>
         <QuickViewDiv>
           <QuickViewLink onClick={this.togglePics}>
           <FaImages /><AiconLabel>Toggle</AiconLabel><AiconLabel>Images</AiconLabel>

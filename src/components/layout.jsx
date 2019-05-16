@@ -30,12 +30,12 @@ const centerPadding = `calc((100vw - ${maxWidthPx - (0 * spacingPx)}px) / 2)`;
 const smallMedia = `@media(max-width: ${minWidthPx}px)`;
 const largeMedia = `@media(min-width: ${maxWidthPx}px)`;
 const textColor = '#333';
-const headerTextColor = '#EEEDD9';
-const headerBgColor = '#0B7372';
-const footerBgColor = '#0B7372';
+const headerTextColor = '#000000';
+const headerBgColor = '#EEEEEE';
+const footerBgColor = '#EEEEEE';
 // const aboutfooterBgColor = '#09868A';
 const aboutfooterBgColor = '#FFF';
-const accentColor = '#ffa70f';
+const accentColor = '#0b7a7a';
 const datetimeColor = '#333';
 const hoverSpaceColor = "#EEEDD9";
 
@@ -44,7 +44,7 @@ const theme = {
   spacing: `${spacingPx}px`,
   headerHeight: '75px',
   underHeaderHeight: '50px',
-  contentTopPadding: '75px',
+  contentTopPadding: '0px',
   textColor,
   accentColor,
   maxWidthPx,
@@ -76,7 +76,9 @@ const Layout = ({ children }) => (
           margin: 0,
           padding: 0,
           // fontFamily: 'Athelas, "Times New Roman", serif',
-          fontFamily: 'Athelas',
+          // fontFamily: 'Athelas',
+          fontFamily: '"Iowan Old Style", "Palatino", "Georgia", Times New Roman, Times, serif',
+          
           fontSize:'1.05rem',
           fontWeight:'300',
         },
@@ -114,6 +116,7 @@ const Layout = ({ children }) => (
           transition: 'color 100ms linear',
           ':hover': {
             color: textColor,
+            // fontWeight: '600',
           },
         },
         
