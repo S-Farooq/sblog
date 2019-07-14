@@ -28,7 +28,7 @@ In the case of classical Arabic, the result to focus on is obvious: the Quran. T
 
 The process: Get some *new* tools (units of language), make something *new* (understand a verse), repeat.
 
-### What a DIY Approach to Classical Arabic Could Look Like
+## What a DIY Approach to Classical Arabic Could Look Like
 
 A DIY approach is not a 'curriculum' - this is exactly what we are trying to escape. It should not tie you down to anything. It should not necessitate a specific structure but allow for one to organically come about from the student. **The 'lesson plans / tutorials' should come in bits and stages** - easily consumable in a sitting yet lasting in reflection-able material for a week. **Each session should engage the student and prize her** with a grain of what she desires most in this adventure: a **cashable result**. Cashable results being some form of capital, something that is a part to the Big Deal (understanding the entire Quran) but complete in itself as well. For example, some verses should be completely (not partially!) readable even if they are easy verses - if I hear them in prayer or recite them, a light should come on atop my head. If I am around friends and the sentence is said, I should be able to grasp at some social attention by claiming, "*ah, that means..* **[insert English translation here]**".
 
