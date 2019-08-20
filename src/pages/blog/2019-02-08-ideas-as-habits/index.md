@@ -5,6 +5,7 @@ path: /ideas-as-habits
 tags: thinking, philosophy, ideas
 layout: post
 foldnum: 1
+exclude: 1
 featuredImage: './coverscraph.jpg'
 description: "While habitual application in craft builds skills, in regards to ideas - habitual application degrades?"
 ---

@@ -5,6 +5,7 @@ path: /poetry-refuses-power
 tags: poetry, art, power, philosophy
 layout: post
 foldnum: 2
+exclude: 1
 featuredImage: './coverscraph.jpg'
 description: "Those of us who explore ideas on whim may find ourselves oscillating between the philosophical and the poetic. Often, the effect of one pushes us towards the other - why?"
 ---
