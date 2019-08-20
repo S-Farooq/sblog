@@ -5,6 +5,7 @@ path: /belle-and-marx
 tags: music, romance, intellectual, marx, belle-and-sebastian
 layout: post
 foldnum: 2
+exclude: 1
 description: "He is a wanderer, he likes stories and romantic ideals that he adopts from unconventional sources. Here, he meets a girl that actually is the revolutionary he reads about."
 featuredImage: "./cover.jpg"
 ---

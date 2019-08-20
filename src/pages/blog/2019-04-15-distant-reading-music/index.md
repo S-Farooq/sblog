@@ -5,6 +5,7 @@ path: /distant-reading-music
 tags: music, map, tree, literary-criticism, literature, reading
 layout: post
 foldnum: 3
+exclude: 1
 featuredImage: "./cover.jpg"
 description: "Exploring the narratives of my Music Library in a Tree"
 readmore: https://medium.com/@shahamfarooq/distant-reading-inspired-thematic-analysis-of-narrative-8b59c207568a
