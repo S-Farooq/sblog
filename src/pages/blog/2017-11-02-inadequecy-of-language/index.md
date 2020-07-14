@@ -5,7 +5,7 @@ path: /inadequacy-of-language
 tags: philosophy, communication, essay, language
 layout: post
 foldnum: 1
-exclude: 0
+exclude: 1
 featuredImage: "./circuit1.jpeg"
 description: "Maybe one of the most tragic love stories is between language and the need for meaningful communication. Neither is completely capable of each other."
 readmore: https://medium.com/indian-thoughts/on-the-inadequacy-of-language-6371b08db9bf

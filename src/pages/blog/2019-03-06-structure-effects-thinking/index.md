@@ -5,6 +5,7 @@ path: /thinking-outside-gui
 tags: thinking, alan-jacobs, structure, user-interface, social-media
 layout: post
 foldnum: 2
+exclude: 0
 description: "More specifically, I'm pondering how the structural properties of Social Media networks like Twitter and Instagram or content distribution apps like Spotify effect my cognition ('process of acquiring knowledge and understanding through thought, experience, and the senses')."
 featuredImage: "./coverscraph.jpg"
 ---

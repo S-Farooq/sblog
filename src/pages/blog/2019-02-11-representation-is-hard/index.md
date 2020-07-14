@@ -5,7 +5,7 @@ path: /representation-is-hard
 tags: creativity, art, work
 layout: post
 foldnum: 3
-exclude: 1
+exclude: 0
 featuredImage: './coverscraph.jpg'
 description: "Often people comment on art as if representing against the status-quo is simply a matter of choice - forgetting the skill required to not break the spell of an art work as it represents something outside the norm."
 ---

@@ -5,6 +5,7 @@ path: /diy-arabic-for-quran
 tags: arabic, learning, language, diy, quran, islam
 layout: post
 foldnum: 3
+exclude: 1
 description: "A proposal and push to create unorthodox, DIY-style approaches to  (literally) understand the Quran."
 ---
 

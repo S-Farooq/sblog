@@ -5,7 +5,7 @@ path: /almost-beautiful-enough-to-forget
 tags: art, beauty, poetry
 layout: post
 foldnum: 3
-exclude: 1
+exclude: 0
 description: "The danger of staring into the abyss is captivating, but at some point, you ask the question, 'Why do I want to understand these terrible, narcissistic killers?'."
 cardImage: './videoscreen.png'
 ---

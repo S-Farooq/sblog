@@ -7,7 +7,7 @@ module.exports = {
     author: 'Shaham Farooq',
     title: "Shaham's Stuff",
     siteUrl: 'https://shaham.ca',
-    description: "Writings on thinking, reading, and creativity for the amateur. + Data Science.",
+    description: "",
     owner: 'Shaham Farooq',
     facebookAppID: '',
   },
