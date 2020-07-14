@@ -5,6 +5,7 @@ path: /lenin-in-seattle
 tags: art, creativity, steal-like-an-artist, duchamp, creative-act
 layout: post
 foldnum: 1
+exclude: 0
 description: "A new bill is looking to find a replacement for Seattle's iconic Lenin Statue. Yes, I know, I had the same question: How in the hell did Lenin get to be in Seattle? I'll tell you, along with why I think the process gives us a caricature view of the social creative act."
 featuredImage: "./coverscraph.jpg"
 ---

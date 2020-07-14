@@ -5,6 +5,7 @@ path: /literary-theory-is-fun
 tags: literature, analysis, pleasure, reading
 layout: post
 foldnum: 1
+exclude: 1
 description: "A critique of critiquing modern literary theory as 'not fun'. 'All knowledge is connected to all other knowledge. The fun is in making the connections.'"
 featuredImage: "./coverscraph.jpg"
 ---

@@ -5,6 +5,7 @@ path: /2019-q1-report
 tags: quarterly-report
 layout: post
 foldnum: 2
+exclude: 1
 description: "2019's first quarter report - what I heard, saw, thought, and loved."
 featuredImage: "cover.jpg"
 ---

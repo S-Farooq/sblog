@@ -5,6 +5,7 @@ path: /male-gaze
 tags: music, analysis, connection, olivia-liang, the-shins, biblical, the-lonely-city
 layout: post
 foldnum: 2
+exclude: 1
 description: "'And if your eye causes you to sin, gouge it out and throw it away. It's better to enter eternal life with only one eye than to have two eyes and be thrown into the fire of hell.'"
 featuredImage: "cover.png"
 ---

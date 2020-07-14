@@ -5,6 +5,7 @@ path: /thinking-is-love
 tags: thinking, philosophy, how-to-think
 layout: post
 foldnum: 2
+exclude: 1
 featuredImage: "./coverscraph.jpg"
 ---
 

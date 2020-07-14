@@ -5,6 +5,7 @@ path: /7-rules-for-relevance
 tags: art, creativity, rules, life, bob-dylan
 layout: post
 foldnum: 2
+exclude: 1
 description: "A modification of Dylan's '7 Simple Rules for a Life in Hiding.'"
 featuredImage: './7rulesforlife.jpg'
 ---
