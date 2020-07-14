@@ -217,7 +217,7 @@ const QuickViewLink = styled(GatsbyLink)(({ theme }) => ({
 
 class Posts extends React.Component {
 
-  state = { quickView: 'none', imgShow: 'none' }
+  state = { quickView: 'block', imgShow: 'block' }
 
   toggleMenu = (event) => {
   event.preventDefault();
